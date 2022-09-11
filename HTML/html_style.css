@@ -14,8 +14,10 @@
 
 body 
     {
-        width: 100vw;
+        width: 70vw;
         height: 100vh;
+        margin-left: 15%;
+        margin-right: 15%;
         background-color: #4f4d4d;
         color: antiquewhite;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,6 +26,6 @@ body
     }
 
 .table tr td {
-padding-top: 30px;
+padding: 30px;
 border-bottom: 1px solid;
 }
