@@ -20,14 +20,17 @@ body
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         background-repeat: no-repeat;
         background-position: center;
+        background-attachment: fixed;
         height: 100vh;
-
-    }
+        
+ }
 
   .menubar 
     {
         background: rgba(0, 0, 0, 0.394);
         text-align: center;
+        position: sticky;
+        top: 0;
     }
 
   .menubar ul
