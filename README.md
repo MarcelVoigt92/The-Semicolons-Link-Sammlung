@@ -6,4 +6,6 @@
 - [ ] Aufgaben verteilen z.B. Person x kümmert sich um Animations, Terminal etc
 - [ ] Jedes Thema bekommt eine extra page (html-Datei) welche von der Landingpage erreicht werden kann.
 - [ ] Weiterführende links auf `<a href="#" target="_blank"></a>`
-- [ ] Aufgaben werden je nach "Können" verteilt (z.B. Hosam ist gut in html Thema geht an ihn.) [Animations] (Marcel)
+- [x] Aufgabenverteilung: Hosam [SASS-SCSS]
+      Marcel[Git/Git-Hub]
+      Klaus [HTML5]
