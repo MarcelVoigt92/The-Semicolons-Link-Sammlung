@@ -35,7 +35,7 @@
                 <li><a href="#">Admin: Thomas</a></li>
                 <li><a href="#">Admin: Michael</a></li>
                 <li><a href="#">Admin: Klaus</a></li>
-                <li><a href="#">Ari</a></li>
+                <li><a href="#">Knecht: Ari</a></li>
               </ul>
             </div>
           </li>
@@ -52,7 +52,379 @@
             </div>
         </div>
     </div>
+<div class="containerone">
+<h1> Grundstruktur einer HTML5-Web-Seite</h1>
+      <table>
+        <tr>
+          <th>Befehl</th>
+          <th>Erklärung</th>
+        </tr>
+        <tr>
+          <td>&lt;!DOCTYPE html&gt;</td>
+          <td>Hiermit wird der Dokumenten-Typ "html" festgelegt</td>
+        </tr>
+        <tr>
+          <td>&lt;html lang="en"&gt;</td>
+          <td>Hier wird mit "en" die verwendete Sprache der Webseite beschrieben ("en" = Englisch, oder "de" = Deutsch). Ausserdem beginnt hier für Browser der mit HTML-Code definierte Bereich.</td>
+        </tr>
+        <tr>
+          <td>&lt;head&gt;</td>
+          <td>Im sogenannten "Kopf-Bereich" werden für diese Seite alle allgemein gültigen Links, Scripte, der Seiten-Titel usw. festgelegt. Alle hier hinterlegten Vorgaben sind auf der Webseite nicht zu sehen.</td>
+        </tr>
+        <tr>
+          <td>&lt;meta charset="UTF-8"&gt;</td>
+          <td>Im sogenannten "Meta-Bereich" wird festgelegt welchen Zeichensatz diese Webseite verwendet. In diesem Beispiel incl. der deutschen Umlaute (Ä,ä,Ö,ö,Ü,ü usw).</td>
+        </tr>
+        <tr>
+          <td>&lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;</td>
+          <td>Durch diese Angabe wird die Darstellbarkeit zu Webbrowsern definiert</td>
+        </tr>
+        <tr>
+          <td>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</td>
+          <td>Hier wird festgelegt, wie die auszugebende Webseite dargestellt werden soll. In diesem Beispiel nimmt der Browser für den darzustellenden "Content" die Breite des Mediums (Monitor, Tablett, Mobil-Phone), als Ausgabebreite der Webseite. Die dritte ANgabe bezieht sich auf den dar zu stellenden Maßstab. Im Beispiel 1.0 = 100%.</td>
+        </tr>
+        <tr>
+          <td>&lt;title&gt;Document&lt;/title&gt;</td>
+          <td>In jedem Browser kann ganz oben der "Seitentitel" angezeigt werden. Dieser Titel wird hier definiert</td>
+        </tr>
+        <tr>
+          <td>&lt;/head&gt;</td>
+          <td>Der "Kopfbereich" endet durch Eingabe dieses "Tag´s". Ab hier beginnt der Bereich der auf dem jeweiligen Medium ausgegeben werden soll.</td>
+        </tr>
+        <tr>
+          <td>&lt;body&gt;</td>
+          <td>Der "Content-Bereich" beginnt hier. Alles was ab hier eingegeben wird, kann auf den Ausgabemedien dargestellt werden.</td>
+        </tr>
+        <tr>
+          <td>&lt;/body&gt;</td>
+          <td>Der "Content-Bereich" endet durch Eingabe dieses "Tag´s". Ab hier endet der Bereich der auf dem jeweiligen Medium ausgegeben werden soll.</td>
+        </tr>
+        <tr>
+          <td>&lt;/html&gt;</td>
+          <td>Das Web-Seitenende ist erreicht.</td>
+        </tr>
+      </table>
 
+</div>
+
+<div class="containertwo">
+  <h1> HTML - Elemente</h1>
+    <br>
+    <h2>Die Typen der HTML-Elemente</h2>
+    <p>Die HTML-Elemente können gepaart oder ungepaart sein. Die gepaarten Elemente haben ein Start-Tag (&lt;&gt;) und ein End-Tag (&lt;/&gt;), und der Inhalt des Elements wird zwischen diesen Tags platziert.</p>
+    <p>Vergessen Sie das Endtag nicht! Obwohl einige HTML-Elemente auch ohne das Endtag korrekt dargestellt werden, verlassen Sie sich darauf nicht. Das kann zu unerwarteten Ergebnissen oder Fehlern führen.</p>
+    <p>Die leeren Elemente haben keine Endtags. Leere Elemente können im Starttag wie folgt "geschlossen" werden: &lt;br/&gt;.</p>
+    <p>Die leeren Elemente in HTML sind: 
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#area">area</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#base">base</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#br">br</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#col">col</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#embed">embed</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hr">hr</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#img">img</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#input">input</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#keygen">keygen</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#link">link</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meta">meta</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#param">param</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#source">source</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#track">track</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">wbr</button>.</p>
+  </div>
+<!-- Modal-Popup "area"-->
+    <div class="modal fade" id="area" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;area&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Das Tag &lt;area&gt; bestimmt die aktiven Bereiche von Image-Map (Koordinate, Form, Größe usw.), die durch das Tag &lt;map&gt; definiert wird. Durch den Klick auf den aktiven Bereich des Images geschieht eine bestimmte Handlung, zum Beispiel wird eine neue Seite mit mehr Information eröffnet.
+            Das Tag &lt;area&gt; wird immer im Tag &lt;map&gt; platziert. Die aktiven Bereiche können einander überdecken. In diesem Fall wird beim Klicken der Bereich aktiviert, der Im HTML-Code höher liegt.
+            Das Tag &lt;area&gt; wird gepaart verwendet, das Endtag ist obligatorisch.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "base"-->
+  <div class="modal fade" id="base" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;base&gt; - Tag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Das Tag &lt;base&gt; ist relativ neu in HTML5. Es definiert die Basis-URL für alle relativen URLs im HTML-Dokument. Es bestimmt auch, wie die Links im aktuellen Dokument (im neuen Fenster, im aktuellen Fenster usw.) geöffnet werden müssen.
+          Das Tag &lt;base&gt; wird ungepaart verwendet. Das Endtag ist notwendig. Aber in XHTML ist das Endtag (&lt;/base&gt;) obligatorisch.
+          Auf der Seite kann nur ein Tag &lt;base&gt; verwendet werden, und es muss im Tag &lt;head&gt; platziert werden. Sie müssen es so schnell wie möglich einfügen, da seine Wirkung sich von der Stelle aus erstreckt, an der es angegeben ist.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Modal-Popup "br"-->
+  <div class="modal fade" id="br" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;br&gt; - Tag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Das Tag &lt;br&gt; bestimmt die Übertragung der Zeile, d. h. die Stelle, wo die nächste Zeile nach dem Zeilenumbruch beginnt. Im Gegensatz zum Tag &lt;p&gt;, das der Absatz bestimmt, wird vor der Zeile keine Leertaste hinzugefügt.
+          Das Tag &lt;br&gt; wird gepaart benutzt, das Endtag wird nicht verwendet. Aber es ist obligatorisch das Tag &lt;br&gt; im XHTML mit dem Endtag (&lt;br /&gt;) zu schließen.
+          Verwenden Sie das Tag &lt;br&gt; nicht anstelle des Tages &lt;p&gt; für die Unterteilung des Textes nach Absätzen.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Modal-Popup "col"-->
+      <div class="modal fade" id="col" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;col&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das Tag &lt;col&gt; bestimmt die Eigenschaften einer oder mehreren Spalten in der HTML-Tabelle, die mit dem Tag &lt;table&gt; bestimmt wird. Das Tag &lt;col&gt; wird häufig mit dem Tag &lt;colgroup&gt;, das eine Gruppe mit den Gesamteigenschaften bestimmt, verwendet.
+              Das Tag &lt;col&gt; wird ungepaart verwendet, kein Endtag ist notwendig. In XHTML aber muss das Tag &lt;col&gt; mit dem Endtag (&lt;/col&gt;) geschlossen werden.
+              Das Tag &lt;col&gt; wird innerhalb des Tages &lt;table&gt;, vor den Tags &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt; und &lt;tr&gt;; und nach dem Tag &lt;caption&gt; platziert, wenn es verwendet wird (im Tag &lt;caption&gt; fügen wir den Namen der Tabelle ein).</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+<!-- Modal-Popup "embed"-->
+    <div class="modal fade" id="embed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;embed&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Das Tag &lt;embed&gt; wird als Container für die externen Anwendungen, den multimedialen und interaktiven Inhalt, die der Browser nicht versteht, verwendet. Für ihre korrekte Darstellung muss man externes Plug-in oder spezielle Programme anschließen. Wie der beigefügte Inhalt angezeigt wird, hängt vom Typ der Datei, von den Attributen des Tages &lt;embed&gt; sowie von Plug-ins, die im Browser installiert sind, ab.
+            Obwohl das Tag &lt;embed&gt; von den Browsern unterstützt wurde, war es in HTML 4 nicht eingeschlossen. Fürs Hochladen von Objekten in HTML 4 wird das Tag &lt;object&gt; verwendet. Da nicht alle Browser in sich befindende Information korrekt darstellen, wird für die Unterstützung der großen Anzahl von Browsern sowie die Validität des Dokumentes das Tag &lt;embed&gt; innerhalb des Tages &lt;object&gt; verwendet. In HTML 5 gibt es kein Problem mit der Validität des Dokuments, weil das Tag &lt;embed&gt; bereits ein ofizielles Status in der neuen Version von HTML hat.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "hr"-->
+  <div class="modal fade" id="hr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;hr&gt; - Tag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>In HTML 5 wird das Tag &lt;hr&gt; für die thematische Unterteilung des Inhalts auf der Webseite verwendet. In den früheren Versionen von HTML wurde es auf den Webseiten für die Gestaltung von horizontalen Linien, die den Inhalt visuell unterteilen, verwendet. In der neuen Version hat es auch inhaltliche Belastung und bestimmt nicht nur visuelle, sondern auch thematische Unterteilung des Inhalts.
+          Das Tag &lt;hr&gt; wird ungepaart verwendet, kein Endtag ist notwendig. In XHTML ist jedoch das Endtag (&lt;hr/&gt;) obligatorisch.
+          Da das Tag &lt;hr&gt; ein Block-Element ist, werden alle Elemente nach ihm an eine neue Zeile übertragen. Das vom Tag bestimmte Aussehen der horizontalen Linie hängt vom Browsertyp ab. </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Modal-Popup "img"-->
+    <div class="modal fade" id="img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;img&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Das Tag &lt;img&gt; wird in HTML für die Beschreibung von Bildern verwendet. Das Bild selbst wird im Dokument nicht direkt platziert, der Browser lädt es aus seiner Quelle, die im Tag &lt;img&gt; eingegeben ist. Für die Eingabe der Quelle wird das Attribut src verwendet.
+            Es gibt zwei erforderliche Attribute für das Element &lt;img&gt;: src, das zur Anzeige der Bildquelle verwendet wird, und alt, das einen alternativen Text für das Bild definiert.
+            Um HTML-Bilder klickbar zu machen, sollen Sie das Tag &lt;img&gt; im Tag &lt;a&gt; platzieren. Das Tag &lt;a&gt; wird zum Einfügen von Links verwendet.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "input"-->
+  <div class="modal fade" id="input" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;input&gt; - Tag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Das Tag &lt;input&gt; wird im Rahmen des Elements &lt;form&gt; für die Bestimmung der Felder für die Informationseingabe seitens der Benutzer verwendet. Der Typ des Feldes (Text, Radiobutton, Checkbox, Feld für die Passworteingabe usw.) wird durch das Attribut type definiert.
+          Um den Text mit einem bestimmten Element zu verbinden, wird das Tag &lt;label&gt;, das für ihn die Textmarkierung definiert, verwendet.
+          Das Tag &lt;input&gt; wird ungepaart verwendet, kein Endtag ist notwendig. Das Tag enthält keinen Textinhalt, es enthält nur Attribute.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Modal-Popup "keygen"-->
+    <div class="modal fade" id="keygen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;keygen&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Das Tag &lt;keygen&gt; ist für die Generierung eines Schlüsselpaares (öffentlich und privat) verantwortlich, das zum Verschlüsseln und Entschlüsseln von Daten, die beim Senden eines HTML-Formulars an den Server gesendet werden, verwendet wird. Der öffentliche Schlüssel wird zusammen mit den übermittelten Formulardaten an den Server gesendet, und der private Schlüssel wird auf dem lokalen Gerät des Benutzers gespeichert.
+            Das Tag wird auch zum Erstellen und Verifizieren der digitalen Signatur verwendet.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "link"-->
+      <div class="modal fade" id="link" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;link&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das Tag &lt;link&gt; verbindet das HTML-Dokument mit externer Quelle. In der Regel wird es für die Einschaltung des externen Files, wo CSS-Stile und Schrifte eingegeben werden, verwendet.
+              Das Tag &lt;link&gt; wird ungepaart verwendet, es enthält nur Attribute und wird immer innerhalb des Tages &lt;head&gt; (in der Regel vor dem Endtag &lt;/head&gt;) platziert, dabei kann es mehrmals verwendet werden.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal-Popup "meta"-->
+    <div class="modal fade" id="meta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;meta&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Das Tag &lt;meta&gt; enthält Metadaten, die dem Browser und der Suchmaschine über die Einzelheiten des HTML-Dokuments (Codierung des Dokuments, Angaben des Autors, Schlüsselwörter, Beschreibung von Webseiten usw.) informieren. Die Metadaten werden auf der Webseite nicht angezeigt.
+            Das Tag &lt;meta&gt; wird im Tag &lt;head&gt; platziert. In einem Dokument kann man einige Tags &lt;meta&gt; verwenden.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal-Popup "param"-->
+  <div class="modal fade" id="param" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "param" - Tag</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Das Tag &lt;param&gt; definiert die Parameter von Java-Applets oder Multimedia-Inhalt, die in den Elementen &lt;applet&gt; oder &lt;object&gt; platziert werden. Dieses Tag erlaubt, die Charakteristik von Objekten direkt im Code des HTML-Dokuments zu ändern. Das Tag &lt;param&gt; bestimmt auch die Parameter für die Abspielung von geeigneten Audio und Videodateien, die durch die neuen HTML5-Tags &lt;audio&gt; und &lt;video&gt; bestimmt werden.
+          Es kann mehr als ein Tag &lt;param&gt; verwendet werden, für jedes von denen wird das Paar “Name-Wert” durch die Attribute name und value festgelegt.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal-Popup "source"-->
+    <div class="modal fade" id="source" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "source" - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Das Tag &lt;source&gt; bestimmt einige multimediale Dateien in verschiedenen Formaten wie Audio und Video. Es ist für die Eigenschaft Cross-Browser notwendig: Der Browser kann aus zugänglichen Varianten das Format, das er unterstützt und ohne Probleme Audio- oder Videodateien abspielt, wählen.
+            In einem Dokument kann das Element &lt;source&gt; mehrmals für die Eingabe von alternativen Audio- und Videodateinen und die Eingabe von einigen Formaten verwendet werden.</p>
+            <p>Beispiel:</p>
+            <p>&lt;track src="..."&gt;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal-Popup "track"-->
+    <div class="modal fade" id="track" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "track" - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Das Tag &lt;track&gt; definiert eine externe Textspur für die Elemente &lt;audio&gt; und &lt;video&gt;, die gewöhnlich Untertitel in verschiedenen Sprachen, Kommentare, Titel usw. enthält.</p>
+            <p>Beispiel:</p>
+            <p>&lt;track src="..."&gt;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal-Popup "wbr"-->
+    <div class="modal fade" id="wbr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "wbr" - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>HTML Tag &lt;wbr&gt; weist den Browser darauf hin, dass bei Bedarf einen Zeilenumbruch erlaubt ist. Dieses Element unterscheidet sich vom Tag &lt;br&gt; dadurch, dass beim Gebrauch des Tages &lt;br&gt; der Browser unbedingt einen Zeilenumbruch macht, beim Gebrauch des Tages &lt;wbr&gt; der Browser zuerst den Inhalt des Elements analysiert und nur dann einen Zeilenumbruch macht, nur wenn es notwendig ist (zum Beispiel, zu langes Wort oder lange URL-Adresse).</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!--Schlussbereich-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
