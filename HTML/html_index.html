@@ -424,6 +424,675 @@
       </div>
     </div>
 </div>
+
+<div class="blockelemente">
+  <h1> Die "Block" - Elemente </h1>
+  <br>
+  <p>Grundsätzliches zu Block- und Inline-Elemente
+    Blockelemente benötigen nach der Definition einen ganzen Block und Inline-Elemente können innerhalb einer Linie (bzw. Block) vorkommen.
+    
+    Was ein Inline-Element und was ein Block-Element darstellt, ist im DTD (Document Type Definition) hinterlegt.
+    Typische Blockelemente sind z.B. "h1 ... h6, p".
+    Typische Inline-Elemente sind z.B. "strong, em, a".
+    
+    Interessant ist, dass diese durch CSS „umdefiniert“ werden können. Aus einem Blockelement kann ein Inline-Element gemacht werden, bzw. die Verhaltensweise eines Inline-Elements. Dadurch kann oftmals float geschickt ersetzt werden.</p>
+  <div class="elementeliste">
+    <p><p>Die "Block" - Elemente in HTML sind: 
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#address">address</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blockquote">blockquote</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dd">dd</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#div">div</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dl">dl</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#fieldset">fieldset</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form">form</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#h1">h1</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hr">hr</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#noscript">noscript</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ol">ol</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#p">p</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pre">pre</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#table">table</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tfoot">tfoot</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ul">ul</button></p>
+      <p>Ab HTML5 kommen noch hinzu:</p>
+      <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#article">article</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#aside">aside</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#audio">audio</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#canvas">canvas</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#figcaption">figcaption</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#figure">figure</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#footer">footer</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#header">header</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#hgroup">hgroup</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#main">main</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nav">nav</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#output">output</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#section">section</button>
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video">video</button></p>
+    </div></p>
+  </div>
+
+<!-- Modal-Popup "adress"-->
+      <div class="modal fade" id="address" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "adress" - Tag</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body fs-4">
+        <p>Das &lt;address&gt;-Element enthält Informationen, wie z.B der Autor dieser Seite, oder inhaltlich Verantwortliche einer Seite oder eines Abschnittes zu erreichen ist.</p>
+        <p>Zu beachten ist: &lt;address&gt;-Elemente sind ausschließlich für die Bereitstellung von Kontaktdaten gedacht. Zum Auszeichnen beliebiger Adressen verwenden wir herkömmliche Absätze.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+      </div>
+<!-- Modal-Popup "adress"-->
+      <div class="modal fade" id="blockquote" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "blockquote" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>&lt;blockquote&gt; setzt einen längeren Textblock als Zitat vom Rest des Texts ab. Die genaue Darstellung bestimmt der Browser. In der Regel wird Text in &lt;blockquote&gt; rechts und links eingerückt und kursiv gerendert. Vor und nach &lt;blockquote&gt; gibt es einen Zeilenumbruch.</p>
+                <p> Text als Zitat kennzeichnen:</p>
+                <p> Ein Zitat in &lt;blockquote&gt; kann aus ein paar Wörtern oder aus ganzen Passagen bestehen. Innerhalb von &lt;blockquote&gt; können beliebige andere HTML-Tags stehen: Block-Elemente wie p und div oder Inline-Elemente wie em, a oder span. &lt;Blockquote&gt; ist Flow Content, zu vergleichen mit den Block-Elementen in XHTM.Die Browser stellen den Inhalt von blockquote mit einem Einzug links und rechts (margin-left und margin-right) dar.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "dd"-->
+      <div class="modal fade" id="dd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "dd" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Eine etwas andere Form von Listen sind Definitionslisten, seit HTML5 Beschreibungslisten (englisch: definition- bzw. description list), die mit dl-Elementen aufgebaut werden. Solche Listen sind beispielsweise für Glossare gedacht. Ein Glossar besteht meist aus einer Liste von Einträgen, die wiederum aus mindestens einem zu erklärenden Sachverhalt nebst mindestens einer Erklärung besteht.</p>
+              <p>  dl: leitet eine Definitions- bzw. Beschreibungsliste ein</p>
+              <p>  dt: (description (list) term) leitet den zu erläuternden Ausdruck ein</p>
+              <p>  dd (description (list) description) umschließt die Erläuterung.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "div"-->
+      <div class="modal fade" id="div" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "div" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Die zwei HTML-Befehle &lt;div&gt; und &lt;span&gt; werden erst durch CSS extrem nützlich. Der HTML-Befehl &lt;div&gt; steht für das englische „division“ in der Bedeutung „Bereich“ und ist ein Block-Element (zur Erinnerung – Block-Elemente nutzen die komplette Browserfensterbreite). Lustigerweise hat der HTML-Befehl &lt;span&gt; im englischen auch die Bedeutung von „Bereich“, ist aber ein Inline-Element. </p>
+              <p>Beide Elemente werden primär zum Begrenzen von Bereichen genutzt. Über die Attribute der Elemente, kann dann Design in die umschlossenen Bereiche gebracht werden. Dabei können die Elemente geschachtelt werden.</p>
+              <p>Wichtig ist zu verstehen, was der Unterschied zwischen &lt;div&gt; und &lt;span&gt; ist:</p>
+              <p>&lt;div&gt; ist ein Block-Element. Ein &lt;div&gt; nimmt die komplette Breite ein, sofern nichts anderes in CSS umdefiniert wurde.
+                &lt;span&gt; dagegen kann innerhalb eines Bereiches angewendet werden – &lt;span&gt; ist ein Inline-Element.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "dl"-->
+      <div class="modal fade" id="dl" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "dl" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das HTML- Element &lt;dl&gt; repräsentiert eine Beschreibungsliste. Das Element umschließt eine Liste von Begriffsgruppen (angegeben durch das &lt;dt&gt; -Element) und Beschreibungen (bereitgestellt durch &lt;dd&gt; -Elemente). Dieses Element wird häufig verwendet, um ein Glossar zu implementieren oder Metadaten (eine Liste von Schlüssel-Wert-Paaren) anzuzeigen.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "dl"-->
+      <div class="modal fade" id="dl" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "dl" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das HTML- Element &lt;dl&gt; repräsentiert eine Beschreibungsliste. Das Element umschließt eine Liste von Begriffsgruppen (angegeben durch das &lt;dt&gt; -Element) und Beschreibungen (bereitgestellt durch &lt;dd&gt; -Elemente). Dieses Element wird häufig verwendet, um ein Glossar zu implementieren oder Metadaten (eine Liste von Schlüssel-Wert-Paaren) anzuzeigen.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "fieldset"-->
+      <div class="modal fade" id="fieldset" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "fieldset" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>&lt;fieldset&gt; gruppiert zusammengehörige Felder eines Formulars mit einem Rahmen und einer Überschrift – der "Legende" oder Kurzbeschreibung. &lt;legend&gt; – die Überschrift – kann für jedes &lt;fieldset&gt; erzeugt werden. </p>
+              <p>Sowohl &lt;fieldset&gt; als auch &lt;legend&gt; sieht man das hohe Alter an, aber für die Darstellung ist CSS zuständig.</p>
+              <p>Gruppieren und zusammenhalten</p>
+              <p>&lt;fieldset&gt; und &lt;legend&gt; lockern lange Formulare auf und halten Gruppen von Formularfeldern optisch zusammen.</p>
+                
+              <p>&lt;legend&gt; setzt eine Legende zu einem Formularelement innerhalb einer &lt;fieldset&gt;-Gruppe. Das &lt;legend&gt;-Element kann nur innerhalb von &lt;fieldset&gt; stehen.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "form"-->
+      <div class="modal fade" id="form" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "form" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>HTML &lt;form&gt; ist der Container für die Felder des Formulars und steuert die Verarbeitung der Benutzereingaben mit den Attributen action und method. </p>
+              <p>Formulare bieten einen Dialog mit dem Besucher einer HTML-Seite. Dahinter steht das &lt;form&gt;-Element mit Eingabefeldern, Abfragen und Textfeldern.</p>                
+              <p>Ablauf von Formularen:</p>
+              <p>Die Anwendungen des Internets – Blogs, Foren, Banking, Shops, Chats und Suchmaschinen – beruhen auf Formularen. Nicht zu vergessen: das allgegenwärtige Kontaktformular.</p>
+              <p>Der Benutzer füllt die Felder des Formulars aus (z.B. eine Versandadresse, einen Benutzernamen und ein Passwort) und klickt anschließend auf den Button Senden (submit). Dadurch werden die Eingaben der Formularefelder zur Weiterbearbeitung der Formulardaten übertragen – in der Regel an ein Programm auf dem Server (z.B. an eine PHP-Anwendung – Beispiel: Zusammenwirken HTML-Formular und PHP-Anwendung).</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "H1"-->
+      <div class="modal fade" id="h1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "H1" - "H6" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt; erzeugen Überschriften in HTML-Seiten. &lt;h1&gt; steht für die wichtigste Überschrift, gefolgt von &lt;h2&gt;, &lt;h3&gt; usw.. Ohne CSS stellen die &lt;h1&gt;- bis &lt;h6&gt;-Header einen Text in abgestufen Größen dar, wobei &lt;h1&gt; die größte und &lt;h6&gt; die kleinste Schrift benutzt.</p>
+              <p>Die Überschriften bilden hierarchische Bereiche und strukturieren die Seite – für den Leser, die Suchmaschinen und Screenreader.</p>
+              <p>Inhalt logisch strukturieren:</p>
+              <p>Mit den alten HTML-Versionen waren Überschriften das einzige Mittel, um den Inhalt von Webseiten logisch zu strukturieren.</p>
+              <p>  Für den Leser soll die Struktur des Inhalts durch Größe und Farbe der Überschriften klar erkennbar sein; für Screenreader und Suchmaschinen anhand der Hierarchie der &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;-Tags.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "hr"-->
+      <div class="modal fade" id="hr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der "hr" - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Die Browser stellen &lt;hr&gt; mit 100% Breite, 2 Pixel Höhe als schwarze Linie und einem leichten 3D-Effekt dar. Der Dokumentenfluss wird unterbrochen, denn das &lt;hr&gt;-Tag erzeugt einen Zeilenumbruch. Der Linie folgt erneut ein Zeilenumbruch und der Dokumentenfluss wird wieder aufgenommen.
+
+                Die hr-Linie wirkt einen Hauch eingedrückt, ist schlicht und grau und läuft ohne spezielles CSS über die gesamte Breite der umfassenden Box. Der exakte Abstand zwischen dem Text oder den Bildern von der Linie hängt vom jeweiligen Browser ab oder wird vom CSS gesteuert.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "noscript"-->
+      <div class="modal fade" id="noscript" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;noscript&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>HTML &lt;noscript&gt; stellt alternativen Inhalt bereit, wenn der Browser das script-Elemente nicht erkennt oder Javascript im Browser deaktiviert ist. </p>
+              <p></p> Mit HTML5 kann &lt;noscript&gt; sowohl im body- als auch im head-Element des HTML-Dokuments stehen. Wenn &lt;noscript&gt; im head steht, dürfen nur meta-, link- und style-Tags im &lt;noscript&gt;-Tag notiert werden. </p>             
+              <p>Nur für Browser ohne Javascript</p>
+              <p>  Mit einem &lt;noscript&gt;-Element im body-Element können alle HTML-Tags verwendet werden, die im body-Tag einer normalen Webseite stehen dürfen. Der Inhalt des &lt;noscript&gt;-Elements wird aber nur angezeigt, wenn Javascript im Browser deaktivert ist oder der Browser keine Scripte ausführen kann.</p>
+                
+              <p>&lt;noscript&gt;-Beispiel:</p>
+              <p>Formulare werden häufig bereits clientseitig im Browser des Benutzers geprüft, um dem Benutzer das Ausfüllen zu erleichtern. Im &lt;noscript&gt;-Tag kann Benutzern, die Javascript deaktiviert haben, dass ihnen ohne Javascript ein komfortables Ausfüllen versagt bleibt.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "ol"-->
+      <div class="modal fade" id="ol" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;ol&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>HTML &lt;ol&gt; (ordered list) erzeugt geordnete nummerierte Listen oder Aufzählungen mit einem Index aus li-Elementen, z.B. für die Bundesliga, Bestsellerlisten oder die Schritte eines Backrezepts. Die Browser markieren die Listenelemente durch Ziffern oder Buchstaben (numerisch oder alphanumerisch) und ziehen sie leicht nach rechts ein, um sie vom normalen Text abzusetzen. </p>
+              <p>Geordnete Listen stellen Zusammenhänge besser heraus als einfache Textabsätze, bringen eine automatische Reihenfolge in die einzelnen Elemente und setzen Priortäten.</p>
+              <p>Nummerierte Listen:</p>
+              <p>Das &lt;ol&gt;-Tag kennzeichnet den Anfang und das Ende der geordneten Aufzählung und nummeriert jedes Element mit einem fortlaufenden Index beginnend mit der Zahl 1 oder der römischen Ziffer i oder mit Buchstaben des Alphabets.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "p"-->
+      <div class="modal fade" id="p" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;p&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das HTML- Element &lt;p&gt; repräsentiert einen Absatz. Absätze werden in visuellen Medien normalerweise als Textblöcke dargestellt, die durch Leerzeilen und/oder Einrückung in der ersten Zeile von benachbarten Blöcken getrennt sind, aber HTML-Absätze können jede strukturelle Gruppierung verwandter Inhalte sein, wie z. B. Bilder oder Formularfelder. </p>
+              <p>Absätze sind Elemente auf Blockebene und werden insbesondere automatisch geschlossen, wenn ein anderes Element auf Blockebene vor dem schließenden &lt;/p&gt; -Tag geparst wird.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "pre"-->
+      <div class="modal fade" id="pre" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;pre&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>&lt;pre&gt; wird eingesetzt, wenn die typografische Formatierung des Textes eine Rolle spielt – in Gedichten, Transcript oder Mitschriften, am häufigsten sicher um Computer-Code, HTML-Quelltext, Javascript oder CSS anzuzeigen. </p>
+              <p>Der Browser stellt den Text exakt so dar, wie er innerhalb des öffnenden und schließenden &lt;pre&gt;-Tags steht. Leerzeichen, Tabulatoren, Spalten und Zeilenumbrüche bleiben erhalten.</p>
+              <p>&lt;pre&gt; Font und der Zeilenumbruch</p>
+              <p>Der Text wird in einer nicht-proportionalen Schrift (Monospace oder Festbreitenschrift) gerendert, bei der alle Zeichen dieselbe Breite haben (monospace, meist Courier).</p>
+              <p>&lt;pre&gt; ist ein Block-Tag – d.h. mit dem öffnenden &lt;pre&gt; beginnt eine neue Zeile.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "table"-->
+      <div class="modal fade" id="table" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;table&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das Tabellenmodell von HTML gestattet Autoren die Anordnung von Daten – Text, vorformatierter Text, Bilder, Links, Formulare, Formularfelder, andere Tabellen und so weiter – in Zellen, die in Zeilen und Spalten angeordnet sind. </p>
+              <p>Jeder Tabelle kann eine Beschriftung zugewiesen werden (siehe das Element CAPTION), die eine kurze Beschreibung der Intention der Tabelle enthält. Zum Nutzen der Leute, die sprach- oder braille-basierte Benutzerprogramme verwenden, kann auch eine längere Beschreibung angegeben werden (über das Attribut summary).</p>
+              <p>Tabellenzeilen können in Kopf-, Fuß- und Rumpfbereiche geordnet werden (über die Elemente &lt;THEAD&gt;, &lt;TFOOT&gt; bzw. &lt;TBODY&gt;). Zeilengruppen vermitteln zusätzliche Strukturinformationen und können von Benutzerprogrammen auf eine Weise dargestellt werden, die diese Struktur unterstützt. Benutzerprogramme können die Bereiche Kopf, Rumpf und Fuß ausnutzen, um das von den Kopf- und Fußbereichen unabhängige Scrollen von Rumpf-Bereichen zu unterstützen. Werden lange Tabellen gedruckt, können die Kopf- und Fußinformationen auf jeder Seite, die Tabellendaten enthält, wiederholt werden.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "tfoot"-->
+      <div class="modal fade" id="tfoot" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;tfoot&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>&lt;tfoot&gt; -Tag für die Kombination von Fußzeile Inhalt HTML-Tabelle.
+
+                &lt;tfoot&gt; -Element sollte sein &lt;thead&gt; und &lt;tbody&gt; jedes Teil (Footer, Header, Body) Elemente in Kombination verwendet , um die Tabelle zu definieren.
+                
+                Durch die Verwendung dieser Elemente, so dass der Browser die Fähigkeit hat, unabhängig von der Tabellenkopf und dem Tabellenfuß Tabelle Körperrolle zu unterstützen. Wenn enthalten mehrere sind lange Tabellen Seiten gedruckt, können die Tabelle Kopf- und Fußzeilen auf jeder Seite gedruckt werden, die Tabellendaten enthält.
+                
+                &lt;tfoot&gt; Tag muss in den folgenden Situationen verwendet werden: a &lt;table&gt; Kind-Elemente, erscheint nach dem &lt;caption&gt;, &lt;colgroup&gt; und &lt;thead&gt; -Element, bevor &lt;tbody&gt; und &lt;tr&gt; -Element.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "ul"-->
+      <div class="modal fade" id="ul" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;ul&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>CSS list-style wirkt auf HTML-Listen – sowohl auf ungeordnete Listen (HTML &lt;ul&gt;) als auf geordnete Listen bzw. Aufzählungen (HTML &lt;ol&gt;). list-style ist die Kurzform für list-style-type, list-style-image und list-style-position. Das CSS für geordnete und ungeordnete Listen gehört zu den wichtigsten Werkzeugen des Webdesigns: Listen stehen nicht nur für Aufzählungen, sondern fast immer stehen Listen hinter den Navigationsmenüs und häufig auch hinter Slideshows. </p>
+              <p>Listen gestalten – list-style</p>
+              <p>Listen mit &lt;ul&gt; und &lt;ol&gt; sind eine alte HTML-Struktur und die Mittel, Listen mit CSS zu gestalten, sind quasi grenzenlos. Listen werden nicht nur für schlichte Aufzählungen genutzt, sondern sind die Basis für das Menü der Navigationsleiste, für Slideshows mit wechselnden Bildern und Cards.</p>
+              <p>list-style-type = ungeordnete Listen &lt;ul&gt; mit disk, circle, square, geordneten Liste &lt;ol&gt; mit Ziffer oder Buchstaben</p>
+              <p>list-style-position = Aufzählungssymbol in die Box für Listenelemente einziehen</p>
+              <p>list-style-image = setzt ein Bild anstelle des Listensymbols in &lt;ul&gt;-Listen</p>
+              <p>none = kein Listensymbol</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "article"-->
+      <div class="modal fade" id="article" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;article&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das HTML- Element &lt;article&gt; stellt eine in sich geschlossene Komposition in einem Dokument, einer Seite, einer Anwendung oder einer Site dar, die unabhängig vertreibbar oder wiederverwendbar sein soll (z. B. in Syndikation). Beispiele hierfür sind: ein Forumsbeitrag, ein Zeitschriften- oder Zeitungsartikel oder ein Blogeintrag, eine Produktkarte, ein vom Benutzer eingereichter Kommentar, ein interaktives Widget oder Gadget oder jedes andere unabhängige Inhaltselement.
+
+                Ein gegebenes Dokument kann mehrere Artikel enthalten; zum Beispiel in einem Blog, das den Text jedes Artikels nacheinander anzeigt, während der Leser scrollt, wäre jeder Beitrag in einem &lt;article&gt; -Element enthalten, möglicherweise mit einem oder mehreren &lt;section&gt; s darin.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "aside"-->
+      <div class="modal fade" id="aside" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;aside&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das &lt;aside&gt; Element wurde mit HTML5 neu eingeführt und kann auf zwei Arten eingesetzt werden. Grundsätzlich basiert der Kontext des &lt;aside&gt; Elements darauf ob es innerhalb oder außerhalb eines article Elementes eingesetzt wird. </p>
+              <p>In Magazinen sieht man oft Info-Kästen die aus dem eigentlichen Inhalt des Artikels herausgezogen sind und z.B. etwas besonders relevantes aus dem Artikel noch einmal gesondert hervorheben. Wenn das der Einsatzzweck des aside Elementes ist, so muss es innerhalb des article Elementes platziert werden, da es eine Beziehung zum Inhalt des Artikels hat.</p>
+              <p>Inhalt der mit dem aktuellen Artikel, Blogpost usw. in Beziehung steht</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "audio"-->
+      <div class="modal fade" id="audio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;audio&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Hiermit können Audio Streams oder Sound genutzt werden. </p>
+              <p>Das HTML <audio> Element hat 7 Attribute</p>
+              <p>src = Der Pfad und Dateiname des Sounds angegeben werden</p>
+              <p>autoplay = Wenn der Wert “autoplay” eingetragen ist, dann startet die Sound Datei nach dem laden der Datei</p>
+              <p>controls = Bei eingetragenen Wert “controls” werden die Steuerelemente angezeigt</p>  
+              <p>loop = Wenn der Parameter “loop” eingetragen ist, dann wird die Musik endlos wiederholt</p>  
+              <p>preload = Wenn “preload” eingetragen wird, dann wird der Sound Datei zusammen mit der Webseite geladen. Dies funktioniert nur, wenn das Attribut autoplay nicht genutzt wird!</p>  
+              <p>muted = Schaltet die Wiedergabe auf Lautlos </p>
+              <p>crossorigin = Festlegen, wie das Steuerelement ursprungsfremde Anfragen behandelt</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "canvas"-->
+      <div class="modal fade" id="canvas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;canvas&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das englische Wort Canvas bedeutet auf deutsch Leinwand und ist ziemlich genau das: Eine Leinwand, auf die man mit Javascript dynamisch Bitmap-Grafiken malen kann. Erfunden wurde das Element vom Webkit-Team und später sind auch Mozilla und Opera auf den &lt;canvas&gt;-Zug aufgesprungen. Damit ist das das Element heutzutage in alle anständigen Browser implementiert (für den IE gibt es einen Trick – dazu später mehr) und Teil des werdenden HTML5-Standards.
+              Die Möglichkeiten von &lt;canvas&gt; sind relativ weit gefasst. Wann immer man man dynamisch Grafiken erzeugen möchte, kann man das mit &lt;canvas&gt; machen. Beispiele sind z.B. die bekannte Image-Replace-Technik "Typeface.js"</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "figcaption"-->
+      <div class="modal fade" id="figcaption" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;figcaption&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das Tag &lt;figcaption&gt; wird fürs Einfügen des Titels oder der Unterschrift verwendet. Das Tag &lt;figcaption&gt; wird im Tag &lt;figure&gt; eingeschlossen. Wenn das Tag &lt;figcaption&gt; das erste beigefügte Element ist, wird der Inhalt über dem Foto angezeigt. </p>
+
+              <p>Im Element &lt;figure&gt; wird nur ein Tag &lt;figcaption&gt; erlaubt, aber können dabei im Element &lt;figure&gt; auch andere Tags (&lt;img&gt; oder &lt;code&gt;) eingeschlossen werden.</p>  
+                
+              <p>Syntax:</p>  
+              <p>Der Inhalt des Elements wird zwischen Start- &lt;figcaption&gt; und Endtags &lt;/figcaption&gt; geschrieben.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "figure"-->
+      <div class="modal fade" id="figure" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;figure&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Bis HTML5 gab es kein besonderes Markup für Abbildungen und die Unterschriften von Bildern oder Grafiken. Während in Zeitschriften oder Büchern kaum ein Bild oder eine Abbildung ohne Unterschrift eingesetzt wird, gab es für die Bildunterschrift in HTML kein semantisches Markup im Standard. </p>
+              <p>HTML &lt;figure&gt; umschließt eine oder mehrere Abbildungen im weitesten Sinne. Das &lt;figure&gt;-Tag ist keinesfalls auf Bilder oder Grafiken beschränkt. Es kann ebensogut SVG- oder Math-Objekte, Tabellen oder Videos enthalten – am besten lässt sich der Einsatz mit Abbildungen in Fachbüchern vergleichen. Dabei soll aber nicht jedes Bild in ein &lt;figure&gt;-Tag – beim Logo einer Seite z.B. macht ein &lt;figure&gt;-Tag keinen Sinn.</p>  
+              <p>&lt;figure&gt; ersetzt das allgegenwärtige div-Tag als Gruppe von zusammengehörenden Elementen, die als Ergänzung der Seite hervorgehoben werden und nicht an einer bestimmten Stelle im Textfluss liegen müssen – zu vergleichen mit einem Abbildungskasten in einem Fachbuch.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "footer"-->
+      <div class="modal fade" id="footer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;footer&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>footer-Tags können unter einzelnen Bereichen der Seite sitzen und den Abschluß der Webseite bilden, anders als das main-Element können footer-Elemente mehrfach innerhalb der Webseite verwendet werden. </p>
+
+              &lt;footer&gt; – am Ende ist nicht Schluß
+                Das &lt;footer&gt;-Element steht nicht nur für den endgültigen Fuß der Seite, sondern kann ebenso auch den Abschluss von Beiträgen in einer Blog-Seite bilden und zusätzliche Informationen zum Beitrag aufnehmen. Das können sowohl Copyright-Informationen als auch Informationen zum Autor oder Links zu weiteren Quellen sein.
+                
+                Typische Elemente, die mit einem &lt;footer&gt;-Element abgeschlossen werden können, sind z.B. &lt;article&gt;, &lt;section&gt; und &lt;figure&gt;. In einem &lt;footer&gt;-Element können beliebige Elemente (Text, Bilder und natürlich Links) liegen, nicht aber &lt;footer&gt;, &lt;main&gt; und &lt;header&gt;. Auf der anderen Seite sollte in &lt;header&gt;- und &lt;address&gt;-Elementen keine &lt;footer&gt;-Elemente liegen.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "header"-->
+      <div class="modal fade" id="header" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;header&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Ein Header (deutsch: Kopf) ist der sichtbare Bereich im obersten Teil einer Webseite. Er ist ein fester Bestandteil im Website-Aufbau und bietet dem Nutzer grundlegende, wichtige Informationen. In der Regel enthält er neben dem Logo der Seite wichtige und häufig benutzte Navigationspunkte und -elemente wie „Login“ oder „Hilfe“. Ein Header ist domainübergreifend für alle Seiten gleich gestaltet. Er befindet sich über dem eigentlichen Hauptmenü oder schließt dieses mit ein.
+              Aber wozu dient der Header einer Website? Eine wichtige Funktion dieses Websiteelements ist es, dem Besucher die Navigation, Orientierung und Interaktion innerhalb der Seite zu erleichtern. Übrigens: Der Header ist als Kopfzeile das Gegenstück zum Footer. So wird die Fußzeile bezeichnet, die sich ganz am Ende der Webseite befindet.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "hgroup"-->
+      <div class="modal fade" id="hgroup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;hgroup&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das &lt;hgroup&gt;-Element stellt eine Überschrift und den zugehörigen Inhalt dar. Das Element kann verwendet werden, um ein &lt;h1&gt;-&lt;h6&gt;-Element mit einem oder mehreren &lt;p&gt;-Elementen zu gruppieren, die Inhalte enthalten, die eine Unterüberschrift, einen alternativen Titel oder eine Tagline darstellen.
+              Beachten Sie: Das &lt;hgroup&gt;-Element wurde vom W3C nicht in den HTML5-Standard übernommen und galt deshalb fälschlicherweise als obsolet. Es ist aber in der Spezifikation der WHATWG enthalten. 
+              Empfehlung: &lt;hgroup&gt; mit nur einer Überschrift sind semantisch sinnlos. Sie blähen nur das Markup unnötig auf und sollten weggelassen werden.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "main"-->
+      <div class="modal fade" id="main" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;main&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>&lt;main&gt; stellt den Hauptinhalt der Webseite dar und sitzt dort, wo früher &lt;div id="main"&gt;, &lt;div id="page"&gt; o.ä. saß. Das &lt;main&gt;-Element soll nur einmal im Dokument vorkommen und weder innerhalb eines &lt;header&gt;, &lt;footer&gt; oder &lt;article&gt;-Tags noch eines &lt;section&gt;-Tags sitzen.</p>
+              <p>Sectioning Tags – Gliederung der Webseite: </p>  
+              <p>&lt;main&gt; gehört zu den Tags, die das Markup des Dokuments strukturieren: &lt;article&gt;, &lt;section&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt; und &lt;aside&gt;. Auch &lt;main&gt; wirkt gegen die Schwemme von &lt;div&gt;-Tags mit langen Listen von CSS-Klassen, die das Markup vor HTML5 in ein wildes und wirres Knäuel verwandelten.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "nav"-->
+      <div class="modal fade" id="nav" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;nav&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das &lt;nav&gt;-Tag ist für Links zu anderen Seiten und zu Bereichen innerhalb derselben Seite reserviert. Das &lt;nav&gt;-Element soll nur für die Haupt-Navigation der Seite benutzt werden und nicht für beiläufige Links einer Seite.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "output"-->
+      <div class="modal fade" id="output" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;output&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Das Tag &lt;output&gt; ist ein neues Tag in HTML5. Es definiert eine Stelle zur Darstellung des Ergebnisses einer Berechnung, die von einem Skript oder der Interaktion des Benutzers mit einem Formelement (&lt;form&gt;) durchgeführt wird. </p>
+
+              <p>Syntax:</p>  
+              <p>Das Tag &lt;output&gt; wird gepaart verwendet, das Endtag ist nicht obligatorisch.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "section"-->
+      <div class="modal fade" id="section" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;section&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Der Bereich, in dem die einzelnen Artikel untereinander angezeigt werden, wird in ein &lt;div&gt; gepackt. Hier gehört es auch hin, denn ein &lt;div&gt; ist ein neutrales Container-Element ohne spezielle Aufgabe, mit dem man mehrere Elemente zusammenfassen kann.
+              Der Unterschied zwischen &lt;article&gt;, &lt;div&gt; und &lt;section&gt;
+              In HTML5 gibt es noch ein Tag, das dem &lt;article&gt;-Element ähnelt. Dieses Tag heisst &lt;section&gt;. Einige Autoren verwenden nun &lt;section&gt; anstatt eines &lt;div&gt;, um mehrere &lt;article&gt;-Elemente auf einer Blog-Homepage zusammenzufassen.
+              Das ist nicht ganz korrekt. Der Grund: Das &lt;section&gt;-Element ist nicht als Container gedacht. Diese Rolle behält nach wie vor das &lt;div&gt;.
+              Eine &lt;section&gt; ist ein in sich geschlossenes Element, das z.B. eine Headline und einen Inhalt enthält. Als Faustregel kann man sich folgendes merken:
+              Ein &lt;div&gt; ist immer dann die richtige Wahl, wenn man etwas zusammenfassen möchte. Ein &lt;section&gt;-Element steht für sich und hat immer eine eigene Headline bzw. könnte sinngemäß eine haben.
+              Das &lt;section&gt;-Element steht damit quasi eine Stufe tiefer als das &lt;article&gt;-Element, das relativ komplex strukturierte Inhalte aufnehmen kann und ausdrücklich für Blog-Posts konzipiert wurde.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "video"-->
+      <div class="modal fade" id="video" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;video&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Mit HTML5 können Sie Filme ohne Plugins oder Add-Ons wiedergeben. Dabei referenziert das video-Element als Container-Element auf eine (oder mehrere) Videodateien.Stellen Sie sich ein Videoformat als ZIP-Datei vor, die den codierten Video-Stream, die Tonspur und evtl. noch Untertitel enthält. </p>
+              <p>Bis jetzt existieren immer noch verschiedene Video- und Audio-Kodierungen. Obwohl die meisten Kameras und Mobiltelefone Filme im MP4-Format (mit H264-Codec) aufnehmen, gab es Vorbehalte, da der dort verwendete H264-Video-Codec unter Umständen zu Lizenzzahlungen verpflichtete. Aus diesen Gründen wurden für den Einsatz im Netz die freien Formate Ogg und WebM entwickelt. Mittlerweile hat sich WebM durchgesetzt und wird von allen Browser außer den IE9-11 unterstützt. Youtube, das ja zum Google-Konzern gehört, verwendet für alle Videos das webm-Format.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
 <!--Schlussbereich-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

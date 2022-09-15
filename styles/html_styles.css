@@ -127,7 +127,8 @@ table tr{
   border-bottom: 1px solid antiquewhite;
 }
 
-.containertwo
+.containertwo,
+.blockelemente
 {
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -142,7 +143,7 @@ table tr{
   height: 100vh;
 }
 
-.containertwo p 
+.blockelemente p 
 {
 width: 60%;
 }
