@@ -437,7 +437,7 @@
     
     Interessant ist, dass diese durch CSS „umdefiniert“ werden können. Aus einem Blockelement kann ein Inline-Element gemacht werden, bzw. die Verhaltensweise eines Inline-Elements. Dadurch kann oftmals float geschickt ersetzt werden.</p>
   <div class="elementeliste">
-    <p><p>Die "Block" - Elemente in HTML sind: 
+    <p>Die "Block" - Elemente in HTML sind:<p> 
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#address">address</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blockquote">blockquote</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dd">dd</button>
@@ -469,7 +469,7 @@
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#output">output</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#section">section</button>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video">video</button></p>
-    </div></p>
+    </div>
   </div>
 
 <!-- Modal-Popup "adress"-->
@@ -1092,6 +1092,66 @@
           </div>
         </div>
       </div>
+</div>
+
+<div class="inlineelemente">
+  <h1>Inline - Elemente - Liste</h1>
+  <p>Wie das Wort Inline schon sagt, kommen diese innerhalb einer Line vor – oder besser zu merken: Inline-Elemente kommen innerhalb Block-Elementen vor. </p>
+  <p>Das Besondere ist: Inline-Elemente nehmen nur den Platz in Anspruch, der auch vom Inhalt benötigt wird. Auch das wird wieder über CSS und einer Hintergrundfarbe am besten sichtbar!</p>    
+  <p>Typische Inline-Elemente sind beispielsweise die Hervorhebungen wie &lt;b&gt; und &lt;i&gt; bzw. Links wie &lt;a href="https://wiki.selfhtml.org"&gt;Wiki&lt;/a&gt;</p>
+  <p>Die "Inline" - Elemente in HTML sind:</p> 
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#a">a</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#abbr">abbr</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#acronym">acronym</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#b">b</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bdo">bdo</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#big">big</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#br">br</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#button">button</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cite">cite</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#code">code</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dfn">dfn</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#em">em</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#i">i</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#input">input</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#img">img</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kbd">kbd</button>
+    <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#label">label</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#map">map</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#object">object</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#q">q</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#samp">samp</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#script">script</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#select">select</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#small">small</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#span">span</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#strong">strong</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sub">sub</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sup">sup</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tt">tt</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#var">var</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textarea">textarea</button>
+  
+    <!-- Modal-Popup "a"-->
+    <div class="modal fade" id="a" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;a&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Anker oder Hyperlink: Was zwischen öffnendem und schließendem &lt;a&gt;-Tag sitzt, wird zu einem klickbaren Link</p>
+            <p>Beispiel:</p>
+            <p> &lt;a href="https://wiki.selfhtml.org"&gt;Wiki&lt;/a&gt; </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!--Schlussbereich-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
