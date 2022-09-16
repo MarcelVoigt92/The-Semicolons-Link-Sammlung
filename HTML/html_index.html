@@ -1110,15 +1110,21 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#button">button</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cite">cite</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#code">code</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#data">data</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#datalist">datalist</button>    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#del">del</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dfn">dfn</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#em">em</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#i">i</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#i">i</button>    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#img">img</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#input">input</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#img">img</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kbd">kbd</button>
     <p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#label">label</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#map">map</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#object">object</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#picture">picture</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#progress">progress</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#q">q</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#samp">samp</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#script">script</button>
@@ -1128,11 +1134,12 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#strong">strong</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sub">sub</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sup">sup</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#template">template</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tt">tt</button>
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#var">var</button>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textarea">textarea</button>
+
   
-    <!-- Modal-Popup "a"-->
+<!-- Modal-Popup "a"-->
     <div class="modal fade" id="a" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -1144,6 +1151,24 @@
             <p>Anker oder Hyperlink: Was zwischen öffnendem und schließendem &lt;a&gt;-Tag sitzt, wird zu einem klickbaren Link</p>
             <p>Beispiel:</p>
             <p> &lt;a href="https://wiki.selfhtml.org"&gt;Wiki&lt;/a&gt; </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal-Popup "abbr"-->
+    <div class="modal fade" id="abbr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;abbr&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>&lt;abbr&gt; kennzeichnet einen Text als Abkürzung eines längeren Wortes oder Ausdrucks oder Akronyms (Abkürzung aus den Anfangsbuchstaben). Die Browser stellen Text in abbr durch eine gestrichelte Linie unter dem Text heraus und machen die Erklärung mit einer kleinen Verzögerung beim Hovern mit der Maus sichtbar.
+            Abkürzungen sind sinnvoll für den Besucher: Wer will schon dauernd Cascading Style Sheets statt einfach CSS lesen? Die Erklärung einer Abkürzung bringt zusätzliche Informationen für Browser, Übersetzungen und auch für die Suchmaschinen.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
