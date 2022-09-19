@@ -47,330 +47,67 @@
                 <p>GitHub wurde 2008 ins Leben gerufen und basiert auf Git, einem Open-Source-Code-Management-System, das von Linus Torvald entwickelt wurde, um Software-Builds schneller erstellen zu können. Nachdem 2011 eine Sicherheitslücke innerhalb des Standard- <a href="https://de.wikipedia.org/wiki/Linux_(Kernel)">Linux-Kernels</a>  auf kernel.org auftauchte, veröffentlichte Torvald Release 3.0 des Linux-Kernels  auf GitHub.</p>
                 <p>Weitere Gruppen und Organisationen, die Projekte in öffentlichen Repositories auf GitHub veröffentlicht haben oder veröffentlichen, sind: Red Hat mit der JBoss-Software, Twitter,     <a href="https://de.wikipedia.org/wiki/Microsoft_Azure">Microsoft Azure</a> , das Open-Compute-Projekt und Mozilla.</p>
                 </div>
-                <div class="containertwo">
-                  <h1> Git Befehle</h1>
-                    <br>
-                    <h2>Git-Optionen</h2>
-                    <p>Es gibt die folgenden Git- Optionen: 
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#version">--version</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#help">--help</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#C-Pfad">-C &#060;Pfad&#062;</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#c-Name">-c &#060;Name&#062;=&#060;Wert&#062;</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exec-path">--exec-path[=&#060;Pfad&#062;]</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#html-path">--html-path</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#man-path">--man-path</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#input">--info-path</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#keygen">-p --paginate</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#link">-P --no-pager</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#meta">--git-dir=&#060;Pfad&#062;</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#param">--work-tree=&#060;Pfad&#062;</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#source">--namespace=&#060;Pfad&#062;</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#track">--super-prefix=&#060;Pfad&#062;</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">--bare</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">--no-replace-objects</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">--glob-pathspecs</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">--noglob-pathspecs</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">--icase-pathspecs</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">--no-optional-locks</button>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">--list-cmds=Gruppe[,Gruppe…​]</button>.</p>
-                  </div>
-                <!-- Modal-Popup "--version"-->
-                    <div class="modal fade" id="version" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title fs-3" id="staticBackdropLabel">--version</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body fs-4">
-                            <p>Gibt die Version der Git-Suite, aus der das git-Programm stammt, aus.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                <!-- Modal-Popup "base"-->
-                  <div class="modal fade" id="base" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title fs-3" id="staticBackdropLabel">--help</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body fs-4">
-                          <p>Gibt eine Übersicht und eine Liste der gebräuchlichsten Befehle aus. Wenn die Option --all oder -a angegeben wurde, werden alle verfügbaren Befehle ausgegeben. Falls der Name eines Git-Befehls angegeben wurde, wird die Handbuchseite für diesen Befehl geöffnet. <br>
-                            Zur Steuerung wie die Handbuchseite dargestellt wird sind andere Optionen verfügbar. Weitere Informationen finden Sie unter git-help, weil git --help ... intern in git help ... konvertiert wird.</p>
-                            <a <link rel="stylesheet" href="https://git-scm.com/docs/git-help" target="_blank">--help</a>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                <!-- Modal-Popup "br"-->
-                  <div class="modal fade" id="br" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title fs-3" id="staticBackdropLabel">-C &#060;Pfad&#062;</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body fs-4">
-                          <p>Git ausführen, als ob Git in &#060;Pfad&#062; statt dem aktuellen Arbeitsverzeichnis gestartet wurde. Falls die Option -C mehrfach angegeben wurde, wird jeder nicht-absolute -C &#060;Pfad&#062; als relativ zum vorherigen -C &#060;Pfad&#062; interpretiert. Wenn &#060;Pfad&#062; existiert, aber leer ist (also -C ""), wird das aktuelle Arbeitsverzeichnis nicht verändert. <br>
-                            Diese Option beeinflusst andere Optionen, die Pfade erwarten, wie --git-dir`und `--work-tree, da ihre Pfade relativ zum Arbeitsverzeichnis, das über -C angegeben wurde, interpretiert werden. Die folgenden Aufrufe sind z.B. identisch: <br><br>
-                            git --git-dir=a.git --work-tree=b -C c status
-                            git --git-dir=c/a.git --work-tree=c/b status</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                <!-- Modal-Popup "col"-->
-                      <div class="modal fade" id="col" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title fs-3" id="staticBackdropLabel">-c &#060;Name&#062;=&#060;Wert&#062;</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body fs-4">
-                              <p>Übergibt einen Konfigurationsparameter an den Befehl. Der übergebene Wert Überschreibt Werte aus Konfigurationsdateien. Der <Name> wird im gleichen Format erwartet, das von git config ausgegeben wird. (Unterschlüssel durch Punkte getrennt). <br><br> Beachten Sie, dass das Weglassen des = in git -c foo.bar ... erlaubt ist und foo.bar auf true setzt (genau wie [foo]bar in einer Konfigurationsdatei). Ein Gleichheitszeichen ohne Wert (wie git -c foo.bar= ...) setzt foo.bar auf einen leeren String, den git config --type=bool in false konvertiert.</p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      </div>
-                <!-- Modal-Popup "embed"-->
-                    <div class="modal fade" id="embed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title fs-3" id="staticBackdropLabel">--exec-path[=&#060;Pfad&#062;]</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body fs-4">
-                            <p>Installationspfad Ihrer Git-Programme. Dies kann auch durch Setzen der Umgebungsvariable GIT_EXEC_PATH. Wenn kein Pfad angegeben ist, gibt git die aktuelle Einstellung aus.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                <!-- Modal-Popup "hr"-->
-                  <div class="modal fade" id="hr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title fs-3" id="staticBackdropLabel">--html-path</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body fs-4">
-                          <p>Ausgabe des Pfads in dem Git’s HTML-Dokumentation installiert ist ohne abschließenden Schrägstrich.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                <!-- Modal-Popup "img"-->
-                    <div class="modal fade" id="img" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title fs-3" id="staticBackdropLabel">--man-path</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body fs-4">
-                            <p>Ausgabe des Handbuchpfads (siehe man(1)) für die Handbuchseiten für diese Git-Version.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                <!-- Modal-Popup "input"-->
-                  <div class="modal fade" id="input" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title fs-3" id="staticBackdropLabel">--info-path</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body fs-4">
-                          <p>Ausgabe des Pfads in dem die Info-Dateien die diese Git-Version dokumentieren installiert sind.</p>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                <!-- Modal-Popup "keygen"-->
-                    <div class="modal fade" id="keygen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title fs-3" id="staticBackdropLabel">-p --paginate</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body fs-4">
-                            <p>Alle Ausgaben an less (oder, falls gesetzt $PAGER) weiterleiten, falls die Standard-Ausgabe ein terminal ist. Dies setzt sich über die pager.<cmd> Konfigurationsoptionen hinweg (siehe Abschnitt "Configuration Mechanism" weiter unten).</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                <!-- Modal-Popup "link"-->
-                      <div class="modal fade" id="link" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title fs-3" id="staticBackdropLabel">-P --no-pager</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body fs-4">
-                              <p>Git-Ausgaben nicht an einen Pager weiterleiten.</p>
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                <!-- Modal-Popup "meta"-->
-                    <div class="modal fade" id="meta" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;meta&gt; - Tag</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body fs-4">
-                            <p>Das Tag &lt;meta&gt; enthält Metadaten, die dem Browser und der Suchmaschine über die Einzelheiten des HTML-Dokuments (Codierung des Dokuments, Angaben des Autors, Schlüsselwörter, Beschreibung von Webseiten usw.) informieren. Die Metadaten werden auf der Webseite nicht angezeigt.
-                            Das Tag &lt;meta&gt; wird im Tag &lt;head&gt; platziert. In einem Dokument kann man einige Tags &lt;meta&gt; verwenden.</p>
-                            <p>Weitere Infos:</p>
-                            <a <link rel="stylesheet" href="https://wiki.selfhtml.org/wiki/HTML/Elemente/meta" target="_blank">&lt;meta&gt;</a>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <!-- Modal-Popup "param"-->
-                  <div class="modal fade" id="param" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;param&gt; - Tag</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body fs-4">
-                          <p>Das Tag &lt;param&gt; definiert die Parameter von Java-Applets oder Multimedia-Inhalt, die in den Elementen &lt;applet&gt; oder &lt;object&gt; platziert werden. Dieses Tag erlaubt, die Charakteristik von Objekten direkt im Code des HTML-Dokuments zu ändern. Das Tag &lt;param&gt; bestimmt auch die Parameter für die Abspielung von geeigneten Audio und Videodateien, die durch die neuen HTML5-Tags &lt;audio&gt; und &lt;video&gt; bestimmt werden.
-                          Es kann mehr als ein Tag &lt;param&gt; verwendet werden, für jedes von denen wird das Paar “Name-Wert” durch die Attribute name und value festgelegt.</p>
-                          <p>Weitere Infos:</p>
-                            <a <link rel="stylesheet" href="https://de.w3docs.com/html-lernen/html-tag-param.html" target="_blank">&lt;param&gt;</a>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Modal-Popup "source"-->
-                    <div class="modal fade" id="source" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;source&gt; - Tag</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body fs-4">
-                            <p>Das Tag &lt;source&gt; bestimmt einige multimediale Dateien in verschiedenen Formaten wie Audio und Video. Es ist für die Eigenschaft Cross-Browser notwendig: Der Browser kann aus zugänglichen Varianten das Format, das er unterstützt und ohne Probleme Audio- oder Videodateien abspielt, wählen.
-                            In einem Dokument kann das Element &lt;source&gt; mehrmals für die Eingabe von alternativen Audio- und Videodateinen und die Eingabe von einigen Formaten verwendet werden.</p>
-                            <p>Beispiel:</p>
-                            <p>&lt;track src="..."&gt;</p>
-                            <p>Weitere Infos:</p>
-                            <a <link rel="stylesheet" href="https://www.w3schools.com/tags/tag_source.asp" target="_blank">&lt;source&gt;</a>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <!-- Modal-Popup "track"-->
-                    <div class="modal fade" id="track" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;track&gt; - Tag</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body fs-4">
-                            <p>Das Tag &lt;track&gt; definiert eine externe Textspur für die Elemente &lt;audio&gt; und &lt;video&gt;, die gewöhnlich Untertitel in verschiedenen Sprachen, Kommentare, Titel usw. enthält.</p>
-                            <p>Beispiel:</p>
-                            <p>&lt;track src="..."&gt;</p>
-                            <p>Weitere Infos:</p>
-                            <a <link rel="stylesheet" href="https://www.w3schools.com/tags/tag_track.asp" target="_blank">&lt;track&gt;</a>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                <!-- Modal-Popup "wbr"-->
-                    <div class="modal fade" id="wbr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;wbr&gt; - Tag</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body fs-4">
-                            <p>HTML Tag &lt;wbr&gt; weist den Browser darauf hin, dass bei Bedarf einen Zeilenumbruch erlaubt ist. Dieses Element unterscheidet sich vom Tag &lt;br&gt; dadurch, dass beim Gebrauch des Tages &lt;br&gt; der Browser unbedingt einen Zeilenumbruch macht, beim Gebrauch des Tages &lt;wbr&gt; der Browser zuerst den Inhalt des Elements analysiert und nur dann einen Zeilenumbruch macht, nur wenn es notwendig ist (zum Beispiel, zu langes Wort oder lange URL-Adresse).</p>
-                            <p>Weitere Infos:</p>
-                            <a <link rel="stylesheet" href="https://wiki.selfhtml.org/wiki/HTML/Elemente/wbr" target="_blank">&lt;wbr&gt;</a>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-                            
-                            
+            </div>
+        </div>    
+        <div class="containertwo">
+          <h1>Git-Befehle</h1>
+          <p>Die wichtigsten Git-Befehle welche jeden Tag genutzt werden sind die folgenden:</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#git">Git-Befehle</button>
+        </div>                   
+          <!-- Modal-Popup "Git-Befehle"-->
+    <div class="modal fade" id="git" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Die wichtigsten Git-Befehle</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+            <p>Mit <code>git --version</code> überprüft ihr, welche git-Version installiert ist.
+              <br><br>
+               Mit <code> git config --global user.name "USERNAME"</code> legt ihr euren globalen Nutzernamen fest, welcher der gleiche wie in Git-Hub sein sollte damit ihr euch korrekt beim Code pushen identifiziert.
+               <br><br>
+               Mit <code> git config --global user.email "e-mail Adresse"</code> legt ihr die dazugehörtige E-Mail Adresse an (auch diese sollte die selbe wie bei Git-Hub sein).
+               <br><br>
+               Mit <code> git clone "SSH-Key oder HTML-Key"</code> könnt ihr ein Repositorie aus Git-Hub klonen und so lokal auf eurem Laptop speichern.
+               <br><br>
+               Mit <code> git status</code> könnt ihr den aktuellen Status des Repositories einsehen.
+               <br><br>
+               Mit <code>git add </code> könnt ihr von euch vorgenommene Änderungen zu dem Repositorie lokal hinzufügen und für den Commit vorbereiten.
+               <br><br>
+               Mit <code>git commit -m „Commit-Nachricht“</code> staged ihr die bereits geaddeten Änderungen. 
+               <br><br>
+               Mit <code>git push REMOTE BRANCHNAME</code> fügt ihr die gestageten Änderungen dem remote Repositorie hinzu. REMOTE ist dabei der Name des entfernten Servers. Wenn Du ein Projekt klonst, dann ist der von git vergebene Standardname origin. Zudem kannst du angeben, in welchen Branch das Projekt hinzugefügt werden soll.
+               <br><br> 
+               Mit <code>git push origin master</code> werden die Änderungen dem Master Branch hinzugefügt.
+               <br><br>
+               Mit <code>git fetch</code> könnt ihr Änderungen aus dem remote Repositorie in das lokale Repositorie zu holen. Der <code>git fetch</code> Befehl wird in diesem Video genauer erklärt: <a href="https://www.youtube.com/watch?v=EnCe89ioCZQ" target="_blank">Click Me</a>
+               <br><br>
+               Mit <code>git branch -a</code> lasst ihr euch alle angelegten Branches anzeigen.
+               <br><br>
+               Mit <code>git checkout BRANCH</code> könnt ihr zwischen den Branches hin und her springen. 
+               <br><br>
+               Mit <code>git pull</code>  kannst du Änderungen aus einem entfernten Repository abholen und mit deinem Workspace, also den Dateien, an denen du derzeit arbeitest, synchronisieren. Du kannst dabei den Pfad zu einem Repository angeben sowie den Branch, aus dem du Änderungen abholen möchtest. Kurz gesagt: git pull = git fetch + git merge.
+               <br><br>
+               Mit <code>git checkout -b "Branchname"</code> erstellt einen neuen Branch und wechselt direkt in diesen.
+               <br><br>
+               Mit <code>git checkout "Branchname"</code> springt ihr zwischen den vorhandenen Branches hin und her.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>                  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+  </html>
+              
+
+            
        
                 
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     
-  </body>
-</html>
