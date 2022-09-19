@@ -1,118 +1,124 @@
 *,
 *::before,
-*::after 
-    {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-:root 
-    {
-        font-size: 62.5%;
-    }
+:root {
+  font-size: 62.5%;
+}
 
-body 
-    {
-        background-image: url(/images/25.jpg);
-        background-size: cover;
-        background-position: center;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-        height: 100vh;
-        
- }
+body {
+  background-image: url(/images/25.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
 
+.menubar {
+  background: rgba(0, 0, 0, 0.394);
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
 
+.menubar ul {
+  display: inline-flex;
+  list-style: none;
+  color: antiquewhite;
+  font-size: 1.5rem;
+}
 
-  .menubar 
-    {
-        background: rgba(0, 0, 0, 0.394);
-        text-align: center;
-        position: sticky;
-        top: 0;
-    }
+.menubar ul li {
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+}
+.menubar ul li a {
+  text-decoration: none;
+  color: antiquewhite;
+}
 
-  .menubar ul
-    {
-        display: inline-flex;
-        list-style: none;
-        color: antiquewhite;
-        font-size: 1.5rem;
-    }
+.active,
+.menubar ul li:hover {
+  background: rgba(255, 68, 0, 0.51);
+  border-radius: 5px;
+}
 
-  .menubar ul li
-    { 
-        width: 250px;
-        margin: 15px;
-        padding: 20px;
-    }
-  .menubar ul li a
-    {
-        text-decoration: none;
-        color: antiquewhite;
-    }
+.submenueone {
+  display: none;
+}
 
-  .active, .menubar ul li:hover
-    {
-        background: rgba(255, 68, 0, 0.51);
-        border-radius: 5px;
-    }
+.menubar ul li:hover .submenueone {
+  display: block;
+  position: absolute;
+  background: rgba(255, 68, 0, 0.51);
+  margin-top: 15px;
+  margin-left: -15px;
+}
 
-  .submenueone 
-    {
-        display: none;
-    }
+.menubar ul li:hover .submenueone ul {
+  display: block;
+  margin: 10px;
+}
 
-  .menubar ul li:hover .submenueone 
-    {
-        display: block;
-        position: absolute;
-        background: rgba(255, 68, 0, 0.51);
-        margin-top: 15px;
-        margin-left: -15px;
-    }
+.menubar ul li:hover .submenueone ul li {
+  width: 200px;
+  padding: 3px;
+  border-bottom: 2px dotted antiquewhite;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
 
-  .menubar ul li:hover .submenueone ul 
-    {
-        display: block;
-        margin: 10px;
-    }
+.menubar ul li:hover .submenueone ul li:nth-child() {
+  border-bottom: none;
+}
 
-  .menubar ul li:hover .submenueone ul li 
-    {
-        width: 200px;
-        padding: 3px;
-        border-bottom: 2px dotted antiquewhite;
-        background: transparent;
-        border-radius: 0;
-        text-align: left;
-    }
-
-  .menubar ul li:hover .submenueone ul li:nth-child()
-    {
-        border-bottom: none;
-    }
-
-  .menubar ul li:hover .submenueone ul li a:hover 
-    {
-        color: black;
-    }
+.menubar ul li:hover .submenueone ul li a:hover {
+  color: black;
+}
 /*-- Ende des Navigations - Bereiches -*/
 
-
-
-
-
 /*-- Start des Main - Content - Bereiches wenn erforderlich -*/
-.content 
-{
-margin-top: 150px;
-margin-left: 50px;
-color: antiquewhite;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-size: 1.5rem;
+.content {
+  margin-top: 150px;
+  margin-left: 50px;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
 }
-/*-- Ende des Main - Content - Bereiches wenn erforderlich -
+/*-- Ende des Main - Content - Bereiches wenn erforderlich -*/
+.containerone {
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.containerone table {
+  width: 60%;
+  border: 1px solid antiquewhite;
+}
+
+.containerone th td {
+  align-items: flex-start;
+}
+table tr {
+  border-bottom: 1px solid antiquewhite;
+}
+
+.containertwo {
+  width: 60%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
