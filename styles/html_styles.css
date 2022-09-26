@@ -120,6 +120,11 @@ table tr {
 .containertwo,
 .blockelemente,
 .inlineelemente {
+
+
+  margin-top: 50px;
+  margin-left: 50px;
+
   width: 60%;
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -129,3 +134,4 @@ table tr {
 .btn {
   font-size: 1.5rem !important  ;
 }
+
