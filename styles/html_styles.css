@@ -94,6 +94,7 @@ body {
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
+  height: 100vh;
 }
 /*-- Ende des Main - Content - Bereiches wenn erforderlich -*/
 .containerone {
@@ -103,6 +104,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 150px;
   margin-left: 50px;
+  height: 100vh;
 }
 
 .containerone table {
@@ -119,12 +121,13 @@ table tr {
 
 .containertwo,
 .blockelemente,
-.inlineelemente {
-
-
+.inlineelemente,
+.formatierung,
+.strukturierung,
+.rahmen {
+  height: 100vh;
   margin-top: 50px;
   margin-left: 50px;
-
   width: 60%;
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -135,3 +138,64 @@ table tr {
   font-size: 1.5rem !important  ;
 }
 
+.rahmenone 
+  {
+    border: 1px solid antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmentwo 
+  {
+    border: 3px dotted antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmenthree 
+  {
+    border: 3px dashed antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmenfour 
+  {
+    border: 3px double antiquewhite ;
+    padding: 1rem;
+  }
+
+.rahmenfive
+  {
+    border: 5px groove antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmensix 
+  {
+    border: 4px inset antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmenseven
+  {
+    border: 4px outset antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmeneight
+  {
+    border-color: antiquewhite red aqua magenta;
+    border-width: 5px 6px 7px 8px;
+    border-style: solid groove dotted double;
+    padding: 1rem;
+  }
+
+.rahmennine
+{
+border-color: antiquewhite;
+border-top-width: 1px;
+border-right-width: 2px;
+border-bottom-width: 3px;
+border-left-width: 4px;
+border-style: solid;
+/*Die Rahmenbreite kann auch zusammengasst werden: border-width: 1px 2px 3px 4px;*/
+padding: 1rem;
+}
