@@ -124,7 +124,8 @@ table tr {
 .inlineelemente,
 .formatierung,
 .strukturierung,
-.rahmen {
+.rahmen, 
+.listen {
   height: 100vh;
   margin-top: 50px;
   margin-left: 50px;
@@ -199,3 +200,5 @@ border-style: solid;
 /*Die Rahmenbreite kann auch zusammengasst werden: border-width: 1px 2px 3px 4px;*/
 padding: 1rem;
 }
+
+/*Listen*/

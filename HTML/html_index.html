@@ -2059,8 +2059,144 @@
 
 </div>
 <!-- Listen -->
+<div class="listen">
+  <h1>Listen & Aufzählungen erstellen</h1> 
+  <p>Für Listen oder Aufzählungen in HTML gibt es mehrere Möglichkeiten der Darstellung. Sie haben dabei immer die gleiche Struktur: Sie bestehen aus einem einleitenden Listen Element, den Listenpunkten bzw. dem Listeninhalt und dem beendenden Listen Element.</p>
 
+  <h2> Listen ohne Listenpunkte</h2> 
+  <p>Um eine normale Liste ohne Listenpunkte, das heißt, ohne Aufzählungen, zu erstellen, können Sie das &lt;ul&gt;-Element verwenden. Die Listenpunkte werden dann durch Zeilenumbrüche (&lt;br&gt;) voneinander getrennt.</p>   
+  <h3>Beispiel:</h3>
 
+    <ul>
+    Listenpunkt 1<br>
+    Listenpunkt 2<br>
+    </ul>
+
+  <h2>Listen mit Listenpunkten</h2>  
+  <p>Um eine normale Liste mit Listenpunkten, zu erstellen, verwendet man das &lt;ul&gt;-Element zum Erstellen der Liste. Es schließt ein oder mehrere &lt;li&gt;-Elemente ein, welche die Listenpunkte darstellen. Diese &lt;li&gt;-Elemente enthalten den Text, der dem jeweiligen Listenpunkt angefügt werden soll.</p>
+    <h3>Beispiel:</h3> 
+
+    <ul>
+    <li>Listenpunkt 1</li>
+    <li>Listenpunkt 2</li>
+    </ul>
+
+  <h2>Listenpunkte</h2>  
+  <p>Das Aussehen der Listenpunkte können Sie über CSS bestimmen. Dafür zuständig ist die Eigenschaft list-style-type. Als Werte stehen die folgenden zur Auswahl:</p>  
+
+<h3>list-style-type - Typen von Listen und Aufzählungen</h3>
+    <table>
+      <tr>
+      <th>Style-Type </th>
+      <th> Beschreibung</th>
+      </tr>
+      <tr>
+        <td>circle</td>
+        <td>Ein Kreis</td>
+      </tr>
+      <tr>
+        <td>decimal</td>
+        <td>Dezimalzahlen (1,2,3,...56,57,...)</td>
+      </tr>
+      <tr>
+        <td>decimal-leading-zero  </td>
+        <td>Dezimalzahlen mit Null (01,02,03,...53,54,...)</td>
+      </tr>
+      <tr>
+        <td>disc</td>
+        <td>Ein Karo</td>
+      </tr>
+      <tr>
+        <td>lower-alpha</td>
+        <td>Kleine ASCII Zeichen (a,b,c...z)</td>
+      </tr>
+      <tr>
+        <td>lower-latin</td>
+        <td>Kleine ASCII Zeichen (a,b,c...z)</td>
+      </tr>
+      <tr>
+        <td>lower-roman	</td>
+        <td>Kleine römische Nummern (i,ii,iii...)</td>
+      </tr>
+      <tr>
+        <td>none</td>
+        <td>Keine Listensymbole</td>
+      </tr>
+      <tr>
+        <td>square</td>
+        <td>Ein Quadrat</td>
+      </tr>
+      <tr>
+        <td>upper-alpha</td>
+        <td>Große ASCII Zeichen (A,B,C...Z)</td>
+      </tr>
+      <tr>
+        <td>upper-latin</td>
+        <td>Große ASCII Zeichen (A,B,C...Z)</td>
+      </tr>
+      <tr>
+        <td>upper-roman</td>
+        <td>Große römische Nummern (I,II,III...)</td>
+      </tr>
+    </table>
+   
+
+   <h3>Beispiel:</h3> 
+
+    <ul style="list-style-type:circle">
+      <li>Listenpunkt 1</li>
+      <li>Listenpunkt 2</li>
+    </ul>
+
+    <h3>Zähllisten</h3>
+    <p>Um Zähllisten zu erstellen, können Sie das ol-Element verwenden. Bei solchen Listen werden die Listenpunkte durchnummeriert bzw. mit Ziffern versehen:</p> 
+
+    <p>Sie können die Startzahl/-ziffer der Listenpunkte mit dem start-Attribut angeben. Normaleinstellung sollte start="1" sein, kann aber auch verändert werden. Im Einzelnen sehen die Listen dann so aus und können durch die Listenpunkte beliebig erweitert werden:</p> 
+
+    <ol start="3">
+    <li>Listenpunkt 1 (Ziffer 3)</li>
+    <li>Listenpunkt 2 (Ziffer 4)</li>
+    </ol>
+    <h2>Listen in Listen</h2>
+      
+    <p>Wenn Sie innerhalb einer Liste eine weitere Liste haben möchten, verläuft zunächst alles wie bei normalen Listen: Sie definieren eine Liste und die dazugehörigen Listeneinträge. An der Stelle an der eine weitere Gruppierung erfolgen soll, notieren Sie nun einfach in diesen Listeneintrag die neue Liste hinein. Diese vertiefung der Listenebenen kann theoretisch beliebig weiter geführt werden.</p>  
+    
+    <h3>Beispiel:</h3>
+
+    <ul>
+    <li>Listenpunkt 1
+      <ul>
+      <li>Listenpunkt 1.1</li>
+      <li>Listenpunkt 1.2</li>
+      </ul>
+    </li>
+    <li>Listenpunkt 2</li>
+    </ul> 
+
+  <p>Dies kann sowohl mit normalen als auch mit Zähllisten geschehen.</p>  
+
+  <p>In der Praxis verwendet man diese Art übrigens oft in Navigationselementen.</p>  
+
+  <p>Definitionslisten
+    Definitionslisten können Sie ebenso wie andere Listen erstellen, nur dass das zu verwendenden Element hierfür das dl-Element ist. Das dl-Element startet und beendet die Liste und beschreibt, dass es sich um eine Definitionsliste handelt. Im dt-Element wir die Listendefinition notiert, die in der Liste stehen sollte. Anschließend an das dt-Element kommt das dd-Element. In ihm wird der Listeneintrag notiert. Letztlich schließt die Liste wieder mit dem dl-Element. Es können beliebig viele Listendefinitionen und Listeneinträge vorgenommen werden, solange diese Reihenfolge bestehen bleibt. Dabei ist zu beachten, dass die Listendefinitionen immer ganz links angezeigt werden und die Listeneinträge etwas versetzt nach rechts. </p>  
+    
+    <h3>Beispiel:</h3>
+
+    <dl>
+    <dt>Listendefinition 1</dt>
+      <dd>Listeneintrag 1</dd>
+    <dt>Listendefinition 2</dt>
+      <dd>Listeneintrag 2</dd>
+      <dd>Listeneintrag 3</dd>
+    </dl> 
+  <p>Dargestellt werden diese Listen dann so, dass die Listendefinition sowie die Listeneinträge in separaten Zeilen stehen. Dabei werden die Listeneinträge etwas versetzt dargestellt. Das stellt sich in etwa so dar:</p>  
+
+    Listendefinition 1
+      Listeneintrag 1
+    Listendefinition 2 
+      Listeneintrag 2
+      Listeneintrag 3
+</div>
 <!-- Tabellen -->
 
 
