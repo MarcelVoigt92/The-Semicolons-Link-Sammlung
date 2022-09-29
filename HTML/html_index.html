@@ -400,7 +400,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-4">
-            <p>Das Tag &lt;source&gt; bestimmt einige multimediale Dateien in verschiedenen Formaten wie Audio und Video. Es ist für die Eigenschaft Cross-Browser notwendig: Der Browser kann aus zugänglichen Varianten das Format, das er unterstützt und ohne Probleme Audio- oder Videodateien abspielt, wählen.
+            <p>Das Tag &lt;source&gt; bestimmt einige multimediale Dateien in verschiedenen Formaten wie Audio und Video. Es ist für die Eigenschaft Cross-Browser notwendig: Der Browser kann aus zugänglichen Absatzianten das Format, das er unterstützt und ohne Probleme Audio- oder Videodateien abspielt, wählen.
             In einem Dokument kann das Element &lt;source&gt; mehrmals für die Eingabe von alternativen Audio- und Videodateinen und die Eingabe von einigen Formaten verwendet werden.</p>
             <p>Beispiel:</p>
             <p>&lt;track src="..."&gt;</p>
@@ -2011,16 +2011,132 @@
     <p>Im Internet, wo die Aufmerksamkeitsspanne der Nutzerinnen und Nutzer meist deutlich unter der von Zeitungsleserinnen und -lesern liegt, ist eine übersichtliche Formatierung des Texts besonders wichtig. Die Leserinnen und Leser sollen mit wenigen Blicken erkennen, ob sie auf der Seite die gesuchte Information finden oder nicht. Dementsprechend messen die Suchmaschinenbetreiber einer guten Textformatierung eine große Bedeutung bei. Ein Text, der durch Überschriften in verschiedenen Größen und mehrere Absätze gegliedert ist und in dem wichtige Informationen in Listen oder Tabellen zusammengefasst werden, hat dementsprechend bessere Chancen, bei Google & Co. auf den vorderen Plätzen der Suchergebnisse zu landen.</p>
  
     <p>Das haben natürlich auch unsere Kunden erkannt und verlangen daher immer häufiger Texte mit umfangreicher HTML-Formatierung. Um dir die Arbeit hier etwas zu erleichtern, wollen wir dir nun die wichtigsten HTML-Tags im Einzelnen vorstellen.</p>
+
+
+    
 </div>
 <!-- Text - Strukturierung -->
 <div class="strukturierung">
   <h1>Text - Strukturierung</h1>
-<p>Eine gute Strukturierung von Text-Inhalten ist für Sehende wie für Nutzer assistiver Technologien wichtig. Sehende erfassen Webseiten visuell: Sie orientieren sich an Überschriften, erkennen Absätze, Listen oder Tabellen und können Webseiten damit leicht überblicken und gezielt auf Inhalte zugreifen.</p>  
+  <p>Eine gute Strukturierung von Text-Inhalten ist für Sehende wie für Nutzer assistiver Technologien wichtig. Sehende erfassen Webseiten visuell: Sie orientieren sich an Überschriften, erkennen Absätze, Listen oder Tabellen und können Webseiten damit leicht überblicken und gezielt auf Inhalte zugreifen.</p>  
 
-<p>Menschen, die diese visuelle Ordnung nicht nutzen können, etwa weil sie blind sind und sich mithilfe ihres Hilfsmittels, dem Screenreader, durchs Netz bewegen, sind darauf angewiesen, dass diese Struktur auf einer anderen Ebene vorhanden ist, dem HTML-Code. Voraussetzung dafür ist die Auszeichnung mit entsprechenden HTML-Tags. Ist Content korrekt ausgezeichnet, kann ein Screenreader-Nutzer diese Struktur interpretieren und interagieren.</p>  
+  <p>Menschen, die diese visuelle Ordnung nicht nutzen können, etwa weil sie blind sind und sich mithilfe ihres Hilfsmittels, dem Screenreader, durchs Netz bewegen, sind darauf angewiesen, dass diese Struktur auf einer anderen Ebene vorhanden ist, dem HTML-Code. Voraussetzung dafür ist die Auszeichnung mit entsprechenden HTML-Tags. Ist Content korrekt ausgezeichnet, kann ein Screenreader-Nutzer diese Struktur interpretieren und interagieren.</p>  
   
-<h2>Wie umsetzen?</h2>  
-<p>Text-Inhalte sollten mit den entsprechenden HTML-Elementen strukturiert sein. Die HTML-Syntax finden Sie nachfolgend bei der Beschreibung der verschiedenen Text-Inhalte. Online-Redakteure müssen aber in der Regel kein HTML eingeben. In den Editoren der Content Management Systeme (CMS) gibt es hierfür Schaltflächen, die die Sache sehr vereinfachen. Text, etwa eine Überschrift, kann dann markiert und über die passende Schaltfläche ausgezeichnet werden.</p>  
+  <h2>Wie umsetzen?</h2>  
+  <p>Text-Inhalte sollten mit den entsprechenden HTML-Elementen strukturiert sein. Die HTML-Syntax finden Sie nachfolgend bei der Beschreibung der verschiedenen Text-Inhalte. Online-Redakteure müssen aber in der Regel kein HTML eingeben. In den Editoren der Content Management Systeme (CMS) gibt es hierfür Schaltflächen, die die Sache sehr vereinfachen. Text, etwa eine Überschrift, kann dann markiert und über die passende Schaltfläche ausgezeichnet werden.</p>  
+  <div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textblock">Textblock</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#absatz">Absatz</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#zeilenwechsel">Zeilenwechsel</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trennstrich">Trennstrich</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ausrichtung">Ausrichtung</button>
+    
+  <!-- Modal-Popup "Textblock"-->
+    <div class="modal fade" id="textblock" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;Textblock&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+          <p>Einen Textblock erzeugt man mit:</p>
+          <p>&lt;div&gt;Text des Absatzes&lt;/div&gt;</p>       
+          <p>Weitere Infos:</p>
+            <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Textblock&gt;</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal-Popup "Absatz"-->
+      <div class="modal fade" id="absatz" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;Absatz&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Einen Text-Absatz erzeugt man mit:</p>
+            <p>&lt;p&gt;Text des Absatzes&lt;/p&gt;</p>       
+            <p>Weitere Infos:</p>
+              <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Absatz&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "Zeilenwechsel"-->
+        <div class="modal fade" id="zeilenwechsel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;Zeilenwechsel&gt; - Tag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fs-4">
+              <p>Einen Zeilenwechsel erzeugt man mit:</p>
+              <p>&lt;br&gt;Text des Absatzes</p> 
+              <p>Der &lt;br&gt;-Tag steht alleine, es gibt dazu kein schließendes &lt;/br&gt;-Tag.</p>      
+              <p>Weitere Infos:</p>
+                <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Zeilenwechsel&gt;</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- Modal-Popup "Trennstrich"-->
+        <div class="modal fade" id="trennstrich" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;Trennstrich&gt; - Tag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fs-4">
+              <p>Einen horizontalen Trennstrich erzeugt man mit:</p>
+              <p>&lt;hr&gt;Text des Absatzes</p> 
+              <p>Das &lt;hr&gt;-Tag steht alleine, es gibt dazu kein schließendes &lt;/hr&gt;-Tag.</p>      
+              <p>Weitere Infos:</p>
+                <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Trennstrich&gt;</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Modal-Popup "Ausrichtung"-->
+          <div class="modal fade" id="ausrichtung" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-3" id="staticBackdropLabel">Die &lt;Ausrichtung&gt; - Tags</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-4">
+                <p>Ausrichtung links ist Standard, man erzeugt die Ausrichtung mit::</p>
+                <p>&lt;div align="Ausrichtung"&gt;...Text...&lt;/div&gt;</p> 
+                <p>wobei für "Ausrichtung" &lt;left&gt;, &lt;right&gt;, &lt;center&gt; und &lt;justify&gt; für Blocksatz eingesetzt werden. Für Absätze kann das &lt;align&gt; auch im &lt;p&gt;-Tag stehen:</p>      
+                <p>Weitere Infos:</p>
+                  <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Ausrichtung&gt;</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </div>
+    
 </div>
 
 
