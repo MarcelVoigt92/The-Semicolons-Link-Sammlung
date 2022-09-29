@@ -2177,8 +2177,8 @@
 
   <p>In der Praxis verwendet man diese Art übrigens oft in Navigationselementen.</p>  
 
-  <p>Definitionslisten
-    Definitionslisten können Sie ebenso wie andere Listen erstellen, nur dass das zu verwendenden Element hierfür das dl-Element ist. Das dl-Element startet und beendet die Liste und beschreibt, dass es sich um eine Definitionsliste handelt. Im dt-Element wir die Listendefinition notiert, die in der Liste stehen sollte. Anschließend an das dt-Element kommt das dd-Element. In ihm wird der Listeneintrag notiert. Letztlich schließt die Liste wieder mit dem dl-Element. Es können beliebig viele Listendefinitionen und Listeneinträge vorgenommen werden, solange diese Reihenfolge bestehen bleibt. Dabei ist zu beachten, dass die Listendefinitionen immer ganz links angezeigt werden und die Listeneinträge etwas versetzt nach rechts. </p>  
+  <p>Definitionslisten:</p>  
+  <p>Definitionslisten können Sie ebenso wie andere Listen erstellen, nur dass das zu verwendenden Element hierfür das &lt;dl&gt;-Element ist. Das &lt;dl&gt;-Element startet und beendet die Liste und beschreibt, dass es sich um eine Definitionsliste handelt. Im &lt;dt&gt;-Element wir die Listendefinition notiert, die in der Liste stehen sollte. Anschließend an das &lt;dt&gt;-Element kommt das &lt;dd&gt;-Element. In ihm wird der Listeneintrag notiert. Letztlich schließt die Liste wieder mit dem &lt;dl&gt;-Element. Es können beliebig viele Listendefinitionen und Listeneinträge vorgenommen werden, solange diese Reihenfolge bestehen bleibt. Dabei ist zu beachten, dass die Listendefinitionen immer ganz links angezeigt werden und die Listeneinträge etwas versetzt nach rechts. </p>  
     
     <h3>Beispiel:</h3>
 
@@ -2197,8 +2197,81 @@
       Listeneintrag 2
       Listeneintrag 3
 </div>
-<!-- Tabellen -->
 
+<!-- Tabellen -->
+<div class="tabellen">
+    <h1>Tabellen</h1>
+    <p>Eine Tabelle ist eine geordnete Zusammenstellung von Texten oder Daten. Die darzustellenden Inhalte werden dabei in Zeilen (waagerecht) und Spalten (senkrecht) gegliedert, die grafisch aneinander ausgerichtet werden.</p> 
+    <p>Beachten Sie: HTML-Tabellen sind die semantisch passende Struktur, um tabellarische Daten in Zeilen und Spalten darzustellen.</p> 
+    <p>Früher wurden HTML-Tabellen dazu eingesetzt, komplette Layouts umzusetzen. Das widerspricht allerdings letztlich dem Grundgedanken eines modernen Webdesigns (Stichwort: Trennung von Inhalt und Layout), kann Probleme hinsichtlich der Barrierefreiheit für Screen-Reader-Nutzer verursachen und ist schlecht zu warten.</p> 
+    <p>Verwenden Sie hierfür das Grid Layout.</p> 
+    <p>Für den Aufbau einer Tabelle der Gitterstruktur sind mehrere Elemente verantwortlich. Im einfachsten Fall besteht eine Tabelle aus Tabellenzeilen, in welchen sich Tabellenzellen befinden.</p> 
+
+    <h3>Beispiel:</h3> 
+    <table>
+      <tr>
+        <td>Inhalt</td>
+      </tr>
+    </table>
+    <p>Dieses (sinnfreie) Beispiel definiert eine Tabelle, welche nur aus einer einzigen Zelle besteht.</p> 
+    <p>&lt;table&gt; leitet eine Tabelle ein (table = Tabelle).</p> 
+    <p>&lt;tr&gt; leitet eine neue Tabellenzeile ein (tr = table row = Tabellenzeile). Im Anschluss daran werden die Zellen (Spalten) der betreffenden Reihe definiert. Am Ende einer Tabellenzeile wird ein abschließendes Tag &lt;/tr&gt; notiert.</p> 
+    <p>Eine Tabellenzeile kann Kopfzellen oder gewöhnliche Datenzellen enthalten.</p> 
+
+    <p>&lt;th&gt; leitet eine Kopfzelle ein (th = table header = Tabellenkopf),</p> 
+    <p>&lt;td&gt; eine normale Datenzelle (td = table data = Tabellendaten). Der Inhalt einer Zelle wird jeweils hinter dem Start-Tag notiert. In einer Tabellenzelle können beliebige Elemente stehen, d. h. außer normalem Text z. B. auch andere Stil-Elemente (phrasing content).</p> 
+    <p>Die folgende Grafik zeigt die Wirkung der HTML-Elemente, die eine Tabelle erzeugen:</p> 
+
+    <h2>Aufbau einer einfachen HTML-Tabelle Tabelle</h2>
+
+    <table>
+      <tr>
+        <th>Berlin</th>
+        <th>Hamburg</th>
+        <th>München</th>
+      </tr>
+      <tr>
+        <td>Miljöh</td>
+        <td>Kiez</td>
+        <td>Bierdampf</td>
+      </tr>
+      <tr>
+        <td>Buletten</td>
+        <td>Frikadellen</td>
+        <td>Fleischpflanzerl</td>
+      </tr>
+    </table>
+    <p>Das Beispiel zeigt eine einfache Tabelle mit drei Zeilen, in denen jeweils drei Zellen definiert wurden. Die erste Zeile enthält Kopfzellen (&lt;th&gt;…&lt;/th&gt;), die beiden anderen Datenzellen (&lt;td&gt;…&lt;/td&gt;). Sie erkennen, dass die Browser ohne weiteres Zutun zwar Kopf- und Datenzellen unterschiedlich formatieren, jedoch keine Rahmenlinien darstellen.</p> 
+    <p>Beachten Sie: Die meisten Browser ergänzen ein fehlendes tbody-Element automatisch.</p> 
+    <p>Beachten Sie: Die Anzahl der Zellen sollte bei jeder Zeile gleich sein, sodass die Tabelle durchweg die gleiche Anzahl Spalten pro Zeile hat. In der ersten Zeile, die Sie definieren, legen Sie deshalb durch die Anzahl der dort definierten Zellen die Anzahl der Spalten Ihrer Tabelle fest.</p> 
+    <p>Tabellenzellen dürfen auch leer sein. Wenn Sie in einer Zeile für eine Spalte keine Daten eingeben wollen, notieren Sie ein einfaches &lt;td&gt;&lt;/td&gt;. Beachten Sie dabei jedoch, dass Web-Browser die Zelle in diesem Fall als "nicht vorhanden" darstellen, da dieses Verhalten der Voreinstellung der CSS-Eigenschaft empty-cells entspricht.</p> 
+
+    <p>Beachten Sie: Im Gegensatz dazu dürfen in HTML-Versionen unterhalb von HTML5 Tabellenzeilen, also &lt;tr&gt;-Elemente, nicht leer sein.</p>  
+    <p>Sie sollten jedoch auch die Tabelle selbst in mehrere Abschnitte gliedern,</p>  
+    <p> - in maximal einen Tabellenkopf &lt;thead&gt;,</p> 
+    <p> - maximal einen Tabellenfuß &lt;tfoot&gt;</p>  
+    <p> - und mindestens einen Tabellenkörper &lt;tbody&gt;.</p>  
+    <h3>Beispiel:</h3>
+    <table>
+        <thead>
+            <tr>
+              <th>Kopf</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Inhalt</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+              <td>Fuß</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Dabei enthält der Tabellenkopf die Zeilen der einfachen Tabelle, die ausschließlich Kopfzellen enthalten, während der Tabellenkörper die Zeilen enthält, die ausschließlich oder hauptsächlich Datenzellen enthalten. Der Tabellenfuß enthält zusammenfassende oder die Tabelle erläuternde Daten.</p>  
+    <p>Wenn die Tabelle im Ausdruck größer als eine Seite ist, werden die thead- und tfoot-Teile beim Drucken auf jeder Seite wiederholt.</p>  
+</div>
 
 
 

@@ -124,9 +124,8 @@ table tr {
 .inlineelemente,
 .formatierung,
 .strukturierung,
-.rahmen, 
-.listen {
-  height: 100vh;
+.rahmen {
+  min-height: 100vh;
   margin-top: 50px;
   margin-left: 50px;
   width: 60%;
@@ -134,7 +133,16 @@ table tr {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
 }
-
+.listen,
+.tabellen {
+  min-height: 100%;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 60%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
 .btn {
   font-size: 1.5rem !important  ;
 }
