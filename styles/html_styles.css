@@ -109,14 +109,14 @@ body {
 
 .containerone table {
   width: 60%;
-  border: 1px solid antiquewhite;
+  border: 1px solid antiquewhite !important;
 }
 
 .containerone th td {
   align-items: flex-start;
 }
 table tr {
-  border-bottom: 1px solid antiquewhite;
+  border-bottom: 1px solid antiquewhite !important;
 }
 
 .containertwo,
@@ -142,6 +142,7 @@ table tr {
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
+  border: 1px solid antiquewhite !important;
 }
 .btn {
   font-size: 1.5rem !important  ;
@@ -210,3 +211,9 @@ padding: 1rem;
 }
 
 /*Listen*/
+.tabellen th,
+.tabellen tr,
+.tabellen td {
+border: 1px solid antiquewhite !important;
+
+}
