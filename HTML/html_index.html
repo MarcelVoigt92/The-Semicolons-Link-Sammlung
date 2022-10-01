@@ -400,7 +400,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-4">
-            <p>Das Tag &lt;source&gt; bestimmt einige multimediale Dateien in verschiedenen Formaten wie Audio und Video. Es ist für die Eigenschaft Cross-Browser notwendig: Der Browser kann aus zugänglichen Varianten das Format, das er unterstützt und ohne Probleme Audio- oder Videodateien abspielt, wählen.
+            <p>Das Tag &lt;source&gt; bestimmt einige multimediale Dateien in verschiedenen Formaten wie Audio und Video. Es ist für die Eigenschaft Cross-Browser notwendig: Der Browser kann aus zugänglichen Absatzianten das Format, das er unterstützt und ohne Probleme Audio- oder Videodateien abspielt, wählen.
             In einem Dokument kann das Element &lt;source&gt; mehrmals für die Eingabe von alternativen Audio- und Videodateinen und die Eingabe von einigen Formaten verwendet werden.</p>
             <p>Beispiel:</p>
             <p>&lt;track src="..."&gt;</p>
@@ -1999,7 +1999,762 @@
 
 </div>
 
+<!-- Text - Formatierung -->
+<div class="formatierung">
+  <h1>Text - Formatierung</h1>
+    <p>HTML steht für „Hypertext Markup Language“ und dient der einheitlichen Formatierung von Texten – vor allem im Web. Schreibst du beispielsweise einen Text in deinem Textverarbeitungsprogramm, würde dieser von einem anderen Programm möglicherweise vollkommen anders dargestellt, da es die Formatierungsbefehle deines Programms nicht richtig interpretieren kann. Um das bei Webtexten zu verhindern und eine einheitliche Formatierung zu ermöglichen, wurde HTML als Standard-Auszeichnungssprache für das Internet festgelegt.</p> 
 
+    <h2>Und wozu braucht man diese ganzen „Tags“?</h2>
+ 
+    <p>Wie wichtig Textformatierung ist, wird anhand eines Beispiels schnell klar. Stell dir einmal vor, du würdest morgens die Zeitung aufschlagen und hättest einen einzigen Textblock vor dir – es gäbe keine Überschriften, keine Absätze, keine Tabellen, keine Bildunterschriften. Vermutlich würdest du die Zeitung nach kurzer Zeit entnervt wieder zur Seite legen.</p> 
+ 
+    <p>Im Internet, wo die Aufmerksamkeitsspanne der Nutzerinnen und Nutzer meist deutlich unter der von Zeitungsleserinnen und -lesern liegt, ist eine übersichtliche Formatierung des Texts besonders wichtig. Die Leserinnen und Leser sollen mit wenigen Blicken erkennen, ob sie auf der Seite die gesuchte Information finden oder nicht. Dementsprechend messen die Suchmaschinenbetreiber einer guten Textformatierung eine große Bedeutung bei. Ein Text, der durch Überschriften in verschiedenen Größen und mehrere Absätze gegliedert ist und in dem wichtige Informationen in Listen oder Tabellen zusammengefasst werden, hat dementsprechend bessere Chancen, bei Google & Co. auf den vorderen Plätzen der Suchergebnisse zu landen.</p>
+ 
+    <p>Das haben natürlich auch unsere Kunden erkannt und verlangen daher immer häufiger Texte mit umfangreicher HTML-Formatierung. Um dir die Arbeit hier etwas zu erleichtern, wollen wir dir nun die wichtigsten HTML-Tags im Einzelnen vorstellen.</p>
+  <div class="formatierung">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#em">em</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#strong">strong</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#code">code</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#samp">samp</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kbd">kbd</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#var">var</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#cite">cite</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#q">q</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#abbr">abbr</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#i">i</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#b">b</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tt">tt</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#big">big</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#small">small</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sub">dub</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sup">sup</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#span">span</button>
+
+    
+  <!-- Modal-Popup "em"-->
+      <div class="modal fade" id="em" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;em&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>HTML-TAG &lt;em&gt; steht für das englische Wort „emphasis“ = „Betonung, Gewichtung, Nachdruck“. Da es von der Textlogik passt, nutzen Sie diesen statt dem HTML-TAG &lt;i&gt; , wenn Sie etwas betonen wollen</p>   
+            <p>&lt;em&gt;...&lt;/em&gt;	=== Betont, hervorgehoben</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;em&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "strong"-->
+      <div class="modal fade" id="strong" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;strong&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>In HTML haben wir 2 HTML-TAGs, die einen Text fett darstellen – der HTML-TAG &lt;strong&gt; und der HTML-TAG <b> (steht für bold). Der Unterschied zwischen &lt;strong&gt; und &lt;b&gt; ist, dass es sich bei &lt;strong&gt; um eine logisch semantische Hervorhebung handelt.</p>   
+            <p>&lt;strong&gt;...&lt;/strong&gt;	=== Noch stärker betont, besonders hervorgehoben</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;strong&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "code"-->
+      <div class="modal fade" id="code" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;code&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das &lt;code&gt;-Tag wird verwendet, um ein Stück Computercode zu definieren. Der darin enthaltene Inhalt wird in der Standard-Monospace-Schriftart des Browsers angezeigt.</p>   
+            <p>&lt;code&gt;...&lt;/code&gt;	=== Quelltext-Fragment, z.B. aus Programmiersprachen</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;code&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "kbd"-->
+      <div class="modal fade" id="kbd" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;kbd&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das Tag &lt;kbd&gt; bestimmt den Namen der Taste oder den an der Tastatur eingegebenen Text. Der Inhalt des Tages wird im Browser durch nichtproportionale Schriftart (alle Zeichen haben die gleiche Breite) angezeigt.</p>   
+            <p>&lt;kbd&gt;...&lt;/kbd&gt;	=== Tastatureingaben des Anwenders</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;kbd&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "var"-->
+      <div class="modal fade" id="var" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;var&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das Tag &lt;var&gt; wird für die Bestimmung von mathematischen/variablen Größen verwendet. Der Inhalt des Tages <var> wird kursiv dargestellt.</p>   
+            <p>&lt;var&gt;...&lt;/var&gt;	=== Variable, verwendbar z.B. auch für Namen</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;var&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "cite"-->
+      <div class="modal fade" id="cite" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;cite&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das &lt;cite&gt;-Tag ist ein Verweis auf ein Werk, entweder durch den Titel des Werks oder den Namen des Autors oder eine URL. &lt;cite&gt; gehört zu den Phrase-Elementen.</p>   
+            <p>&lt;cite&gt;...&lt;/cite&gt;	=== Zitat</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;cite&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "q"-->
+      <div class="modal fade" id="q" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;q&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das &lt;q&gt;-Tag (quotation) markiert Text mit Anführungszeichen. Die Browser sollen den Text automatisch mit den typografischen Anführungszeigen je nach Landessprache anzeigen (anstelle der lieblosen doppelten Hochkommas). Im Text stellen doppelte Hochkommas meist ein kurzes Zitat oder wörtliche Rede dar.</p>   
+            <p>&lt;q&gt;...&lt;/q&gt;</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;q&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "abbr"-->
+      <div class="modal fade" id="abbr" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;abbr&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>&lt;abbr&gt; kennzeichnet einen Text als Abkürzung eines längeren Wortes oder Ausdrucks oder Akronyms (Abkürzung aus den Anfangsbuchstaben). Die Browser stellen Text in abbr durch eine gestrichelte Linie unter dem Text heraus und machen die Erklärung mit einer kleinen Verzögerung beim Hovern mit der Maus sichtbar.</p>   
+            <p>&lt;abbr&gt;...&lt;/abbr&gt; === Als Buchstabenfolge gesprochene Abkürzungen</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;abbr&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "acronym"-->
+      <div class="modal fade" id="acronym" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;acronym&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>&lt;acronym&gt; und &lt;abbr&gt; waren von je her fast gleichbedeutend, sichtbare Unterschiede gab es nicht. Ein Akronym (Radar, JPEG [ˈdʒeɪpɛɡ], LOL ) kann man als Wort aussprechen, Abkürzungen (JPG, IBM, ZDF, USA) werden als einzelne Buchstaben ausgesprochen.</p>   
+            <p>&lt;acronym&gt;...&lt;/acronym&gt; === Als Wort gesprochene Abkürzungen</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;acronym&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "i"-->
+      <div class="modal fade" id="i" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;i&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das &lt;i&gt;-Element zeichnet einen Teil eines Fließtextes aus, der sich vom übrigen Text abheben soll, keine besondere Bedeutung hat und üblicherweise kursiv dargestellt wird.</p>   
+            <p>&lt;i&gt;...&lt;/i&gt; === Kursive Schrift</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;i&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "b"-->
+      <div class="modal fade" id="b" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;b&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das Tag &lt;b&gt; wird verwendet, um ein Fragment des Textes mit fettiger Schrift zu betonen und ihn für den Benutzer bemerkenswerter zu machen. Das Tag &lt;b&gt; hebt nur ein Fragment des Textes hervor, es hat keine Bedeutungsbelastung (einschließlich für die Suchsysteme).</p>   
+            <p>&lt;b&gt;...&lt;/b&gt; === Fett geschriebene Schrift</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;b&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "tt"-->
+      <div class="modal fade" id="tt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;tt&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>HTML Tag &lt;tt&gt; gehört zur Gruppe von Tags der physischen Formatierung. Der in ihm platzierte Text wird durch nichtproportionale Schriftart (der Effekt der Schreibmaschine oder des Fernschreibers) dargestellt. Das Tag &lt;tt&gt; ist in HTML 5 veraltet. Es wird empfohlen, die CSS-Stile zu verwenden.</p>   
+            <p>&lt;tt&gt;...&lt;/tt&gt; === Dicktengleich</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;tt&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "big"-->
+      <div class="modal fade" id="big" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;big&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das Element &lt;big&gt; wird verwendet, um die Schriftgröße um eine konventionelle Einheit zu erhöhen. Die Schriftart in HTML wird in konventionellen Einheiten von 1 bis 7 gemessen, die Standardtextgröße ist 3.</p>   
+            <p>&lt;big&gt;...&lt;/big&gt; === Größer als normal</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;big&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "small"-->
+      <div class="modal fade" id="small" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;small&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das &lt;small&gt;-Element (small, engl. klein.) zeichnet einen Teil eines Fließtextes als weniger bedeutend aus. Das &lt;small&gt;-Element war ursprünglich ein rein präsentationsbezogenes Element ohne semantische Bedeutung für kleiner dargestellten Text.</p>   
+            <p>&lt;small&gt;...&lt;/small&gt; === Kleiner als normal</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;small&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "sub"-->
+      <div class="modal fade" id="sub" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;sub&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Am Anfang des Textbereichs, der als tiefgestellt ausgezeichnet werden soll, wird ein einleitendes &lt;sub&gt; -Tag eingefügt. Am Ende des gewünschten Textbereichs wird ein entsprechendes Abschluss-Tag ( &lt;/sub&gt; ) eingefügt. Beachten Sie: Oft sind es nur Zahlen, die tiefgestellt werden müssen.</p>   
+            <p>&lt;sub&gt;...&lt;/sub&gt; === Tiefgestellt</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;sub&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "sup"-->
+      <div class="modal fade" id="sup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;sup&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Das Tag &lt;sup&gt; wird verwendet, um den Text in der Hochstellung, der gegenüber dem normalen Text hochgestellt wird, zu bestimmen. Im Tag platzierter Text wird mit einem kleineren Schriftgrad als der restliche Text dargestellt. Der Text in der Hochstellung wird häufig in den Fußnoten und Formel verwendet.</p>   
+            <p>&lt;sup&gt;...&lt;/sup&gt; === Hochgestellt</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;sup&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal-Popup "span"-->
+      <div class="modal fade" id="span" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;span&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Die HTML &lt;span&gt; Tag wird für die Gruppierung und Anwenden von Stilen auf Inline-Elemente verwendet. Es gibt an einen Unterschied zwischen dem &lt;span&gt;-Tag und dem &lt;div&gt;-Tag. Das &lt;span&gt;-Tag ist verwendet mit Inline-Elemente , während das &lt;div&gt;-Tag mit Block-Level-Inhalte verwendet.</p>   
+            <p>&lt;span&gt;...&lt;/span&gt; === Inline-Element ohne Wirkung</p>              
+            <p>Weitere Infos:</p>
+              <a href="https://www.loewenstark.com/wissen/html/texte/" target="_blank">&lt;span&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+    
+</div>
+<!-- Text - Strukturierung -->
+<div class="strukturierung">
+  <h1>Text - Strukturierung</h1>
+  <p>Eine gute Strukturierung von Text-Inhalten ist für Sehende wie für Nutzer assistiver Technologien wichtig. Sehende erfassen Webseiten visuell: Sie orientieren sich an Überschriften, erkennen Absätze, Listen oder Tabellen und können Webseiten damit leicht überblicken und gezielt auf Inhalte zugreifen.</p>  
+
+  <p>Menschen, die diese visuelle Ordnung nicht nutzen können, etwa weil sie blind sind und sich mithilfe ihres Hilfsmittels, dem Screenreader, durchs Netz bewegen, sind darauf angewiesen, dass diese Struktur auf einer anderen Ebene vorhanden ist, dem HTML-Code. Voraussetzung dafür ist die Auszeichnung mit entsprechenden HTML-Tags. Ist Content korrekt ausgezeichnet, kann ein Screenreader-Nutzer diese Struktur interpretieren und interagieren.</p>  
+  
+  <h2>Wie umsetzen?</h2>  
+  <p>Text-Inhalte sollten mit den entsprechenden HTML-Elementen strukturiert sein. Die HTML-Syntax finden Sie nachfolgend bei der Beschreibung der verschiedenen Text-Inhalte. Online-Redakteure müssen aber in der Regel kein HTML eingeben. In den Editoren der Content Management Systeme (CMS) gibt es hierfür Schaltflächen, die die Sache sehr vereinfachen. Text, etwa eine Überschrift, kann dann markiert und über die passende Schaltfläche ausgezeichnet werden.</p>  
+  <div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textblock">Textblock</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#absatz">Absatz</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#zeilenwechsel">Zeilenwechsel</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trennstrich">Trennstrich</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ausrichtung">Ausrichtung</button>
+    
+  <!-- Modal-Popup "Textblock"-->
+    <div class="modal fade" id="textblock" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;Textblock&gt; - Tag</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body fs-4">
+          <p>Einen Textblock erzeugt man mit:</p>
+          <p>&lt;div&gt;Text des Absatzes&lt;/div&gt;</p>       
+          <p>Weitere Infos:</p>
+            <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Textblock&gt;</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Modal-Popup "Absatz"-->
+      <div class="modal fade" id="absatz" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;Absatz&gt; - Tag</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Einen Text-Absatz erzeugt man mit:</p>
+            <p>&lt;p&gt;Text des Absatzes&lt;/p&gt;</p>       
+            <p>Weitere Infos:</p>
+              <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Absatz&gt;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- Modal-Popup "Zeilenwechsel"-->
+        <div class="modal fade" id="zeilenwechsel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;Zeilenwechsel&gt; - Tag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fs-4">
+              <p>Einen Zeilenwechsel erzeugt man mit:</p>
+              <p>&lt;br&gt;Text des Absatzes</p> 
+              <p>Der &lt;br&gt;-Tag steht alleine, es gibt dazu kein schließendes &lt;/br&gt;-Tag.</p>      
+              <p>Weitere Infos:</p>
+                <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Zeilenwechsel&gt;</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- Modal-Popup "Trennstrich"-->
+        <div class="modal fade" id="trennstrich" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;Trennstrich&gt; - Tag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body fs-4">
+              <p>Einen horizontalen Trennstrich erzeugt man mit:</p>
+              <p>&lt;hr&gt;Text des Absatzes</p> 
+              <p>Das &lt;hr&gt;-Tag steht alleine, es gibt dazu kein schließendes &lt;/hr&gt;-Tag.</p>      
+              <p>Weitere Infos:</p>
+                <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Trennstrich&gt;</a>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- Modal-Popup "Ausrichtung"-->
+          <div class="modal fade" id="ausrichtung" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-3" id="staticBackdropLabel">Die &lt;Ausrichtung&gt; - Tags</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-4">
+                <p>Ausrichtung links ist Standard, man erzeugt die Ausrichtung mit::</p>
+                <p>&lt;div align="Ausrichtung"&gt;...Text...&lt;/div&gt;</p> 
+                <p>wobei für "Ausrichtung" &lt;left&gt;, &lt;right&gt;, &lt;center&gt; und &lt;justify&gt; für Blocksatz eingesetzt werden. Für Absätze kann das &lt;align&gt; auch im &lt;p&gt;-Tag stehen:</p>      
+                <p>Weitere Infos:</p>
+                  <a href="https://www.cachewiki.de/wiki/HTML_Textstrukturierung" target="_blank">&lt;Ausrichtung&gt;</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+  </div>
+    
+</div>
+
+
+
+<!-- Rahmen -->
+<div class="rahmen">
+<h1>Border</h1> 
+<p>Der Border braucht 3 Werte, Border-Breite, Border-Style und Border-Farbe, ohne die er nicht dargestellt wird.</p> 
+
+<table class="tabellen">
+  <tr>
+    <td>Farbe</td>
+    <td>border-color: Hexcode, rgb oder rgba;</td>
+  </tr>
+  <tr>
+    <td>Rahmenbreite</td>
+    <td>border-width: Pixel oder EM</td>
+  </tr>
+  <tr>
+    <td>Rahmenstyle</td>
+    <td>border-style: solid, dotted, dashed, double, groove, inset, outset</td>
+  </tr>
+</table>
+<br><br>
+
+ <h2>Beispiele</h2>
+    <div class="rahmenone">Rahmenstyle solid</div><br>
+    <div class="rahmentwo">Rahmenstyle dotted</div><br>
+    <div class="rahmenthree">Rahmenstyle dashed</div><br>
+    <div class="rahmenfour">Rahmenstyle double</div><br>
+    <div class="rahmenfive">Rahmenstyle groove</div><br>
+    <div class="rahmensix">Rahmenstyle inset</div><br>
+    <div class="rahmenseven">Rahmenstyle outset</div><br>
+    <div class="rahmeneight">Rahmenstyle solid groove dotted double</div><br>
+    <div class="rahmennine">Rahmenstyle mix</div><br>
+
+</div>
+<!-- Listen -->
+<div class="listen">
+  <h1>Listen & Aufzählungen erstellen</h1> 
+  <p>Für Listen oder Aufzählungen in HTML gibt es mehrere Möglichkeiten der Darstellung. Sie haben dabei immer die gleiche Struktur: Sie bestehen aus einem einleitenden Listen Element, den Listenpunkten bzw. dem Listeninhalt und dem beendenden Listen Element.</p><br>
+
+  <h2> Listen ohne Listenpunkte</h2> 
+  <p>Um eine normale Liste ohne Listenpunkte, das heißt, ohne Aufzählungen, zu erstellen, können Sie das &lt;ul&gt;-Element verwenden. Die Listenpunkte werden dann durch Zeilenumbrüche (&lt;br&gt;) voneinander getrennt.</p> <br>  
+  <h3>Beispiel:</h3>
+
+    <ul>
+    Listenpunkt 1<br>
+    Listenpunkt 2<br>
+    </ul><br>
+
+  <h2>Listen mit Listenpunkten</h2>  
+  <p>Um eine normale Liste mit Listenpunkten, zu erstellen, verwendet man das &lt;ul&gt;-Element zum Erstellen der Liste. Es schließt ein oder mehrere &lt;li&gt;-Elemente ein, welche die Listenpunkte darstellen. Diese &lt;li&gt;-Elemente enthalten den Text, der dem jeweiligen Listenpunkt angefügt werden soll.</p><br>
+    <h3>Beispiel:</h3> 
+
+    <ul>
+    <li>Listenpunkt 1</li>
+    <li>Listenpunkt 2</li>
+    </ul><br>
+
+  <h2>Listenpunkte</h2>  
+  <p>Das Aussehen der Listenpunkte können Sie über CSS bestimmen. Dafür zuständig ist die Eigenschaft list-style-type. Als Werte stehen die folgenden zur Auswahl:</p>  <br><br>
+
+<h3>list-style-type - Typen von Listen und Aufzählungen</h3>
+    <table class="tabellen">
+      <tr>
+      <th>Style-Type </th>
+      <th> Beschreibung</th>
+      </tr>
+      <tr>
+        <td>circle</td>
+        <td>Ein Kreis</td>
+      </tr>
+      <tr>
+        <td>decimal</td>
+        <td>Dezimalzahlen (1,2,3,...56,57,...)</td>
+      </tr>
+      <tr>
+        <td>decimal-leading-zero  </td>
+        <td>Dezimalzahlen mit Null (01,02,03,...53,54,...)</td>
+      </tr>
+      <tr>
+        <td>disc</td>
+        <td>Ein Karo</td>
+      </tr>
+      <tr>
+        <td>lower-alpha</td>
+        <td>Kleine ASCII Zeichen (a,b,c...z)</td>
+      </tr>
+      <tr>
+        <td>lower-latin</td>
+        <td>Kleine ASCII Zeichen (a,b,c...z)</td>
+      </tr>
+      <tr>
+        <td>lower-roman	</td>
+        <td>Kleine römische Nummern (i,ii,iii...)</td>
+      </tr>
+      <tr>
+        <td>none</td>
+        <td>Keine Listensymbole</td>
+      </tr>
+      <tr>
+        <td>square</td>
+        <td>Ein Quadrat</td>
+      </tr>
+      <tr>
+        <td>upper-alpha</td>
+        <td>Große ASCII Zeichen (A,B,C...Z)</td>
+      </tr>
+      <tr>
+        <td>upper-latin</td>
+        <td>Große ASCII Zeichen (A,B,C...Z)</td>
+      </tr>
+      <tr>
+        <td>upper-roman</td>
+        <td>Große römische Nummern (I,II,III...)</td>
+      </tr>
+    </table>
+    <br>
+
+   <h3>Beispiel:</h3> 
+
+    <ul style="list-style-type:circle">
+      <li>Listenpunkt 1</li>
+      <li>Listenpunkt 2</li>
+    </ul>
+    <br>
+    <h3>Zähllisten</h3>
+    <p>Um Zähllisten zu erstellen, können Sie das ol-Element verwenden. Bei solchen Listen werden die Listenpunkte durchnummeriert bzw. mit Ziffern versehen:</p> 
+
+    <p>Sie können die Startzahl/-ziffer der Listenpunkte mit dem start-Attribut angeben. Normaleinstellung sollte start="1" sein, kann aber auch verändert werden. Im Einzelnen sehen die Listen dann so aus und können durch die Listenpunkte beliebig erweitert werden:</p> 
+    <br>
+    <ol start="3">
+    <li>Listenpunkt 1 (Ziffer 3)</li>
+    <li>Listenpunkt 2 (Ziffer 4)</li>
+    </ol>
+    <h2>Listen in Listen</h2>
+    <br> 
+    <p>Wenn Sie innerhalb einer Liste eine weitere Liste haben möchten, verläuft zunächst alles wie bei normalen Listen: Sie definieren eine Liste und die dazugehörigen Listeneinträge. An der Stelle an der eine weitere Gruppierung erfolgen soll, notieren Sie nun einfach in diesen Listeneintrag die neue Liste hinein. Diese vertiefung der Listenebenen kann theoretisch beliebig weiter geführt werden.</p>  
+    <br>
+    <h3>Beispiel:</h3>
+
+    <ul>
+    <li>Listenpunkt 1
+      <ul>
+      <li>Listenpunkt 1.1</li>
+      <li>Listenpunkt 1.2</li>
+      </ul>
+    </li>
+    <li>Listenpunkt 2</li>
+    </ul> 
+    <br>
+  <p>Dies kann sowohl mit normalen als auch mit Zähllisten geschehen.</p>  
+
+  <p>In der Praxis verwendet man diese Art übrigens oft in Navigationselementen.</p>  
+  <br>
+  <p>Definitionslisten:</p>  
+  <p>Definitionslisten können Sie ebenso wie andere Listen erstellen, nur dass das zu verwendenden Element hierfür das &lt;dl&gt;-Element ist. Das &lt;dl&gt;-Element startet und beendet die Liste und beschreibt, dass es sich um eine Definitionsliste handelt. Im &lt;dt&gt;-Element wir die Listendefinition notiert, die in der Liste stehen sollte. Anschließend an das &lt;dt&gt;-Element kommt das &lt;dd&gt;-Element. In ihm wird der Listeneintrag notiert. Letztlich schließt die Liste wieder mit dem &lt;dl&gt;-Element. Es können beliebig viele Listendefinitionen und Listeneinträge vorgenommen werden, solange diese Reihenfolge bestehen bleibt. Dabei ist zu beachten, dass die Listendefinitionen immer ganz links angezeigt werden und die Listeneinträge etwas versetzt nach rechts. </p>  
+  <br> 
+    <h3>Beispiel:</h3>
+
+    <dl>
+    <dt>Listendefinition 1</dt>
+      <dd>Listeneintrag 1</dd>
+    <dt>Listendefinition 2</dt>
+      <dd>Listeneintrag 2</dd>
+      <dd>Listeneintrag 3</dd>
+    </dl> 
+    <br>
+  <p>Dargestellt werden diese Listen dann so, dass die Listendefinition sowie die Listeneinträge in separaten Zeilen stehen. Dabei werden die Listeneinträge etwas versetzt dargestellt. Das stellt sich in etwa so dar:</p>  
+  <br>
+    Listendefinition 1
+      Listeneintrag 1
+    Listendefinition 2 
+      Listeneintrag 2
+      Listeneintrag 3
+      <br>   
+</div>
+
+<!-- Tabellen -->
+<div class="tabellen">
+    <h1>Tabellen</h1>
+    <p>Eine Tabelle ist eine geordnete Zusammenstellung von Texten oder Daten. Die darzustellenden Inhalte werden dabei in Zeilen (waagerecht) und Spalten (senkrecht) gegliedert, die grafisch aneinander ausgerichtet werden.</p> 
+    <p>Beachten Sie: HTML-Tabellen sind die semantisch passende Struktur, um tabellarische Daten in Zeilen und Spalten darzustellen.</p> 
+    <p>Früher wurden HTML-Tabellen dazu eingesetzt, komplette Layouts umzusetzen. Das widerspricht allerdings letztlich dem Grundgedanken eines modernen Webdesigns (Stichwort: Trennung von Inhalt und Layout), kann Probleme hinsichtlich der Barrierefreiheit für Screen-Reader-Nutzer verursachen und ist schlecht zu warten.</p> 
+    <p>Verwenden Sie hierfür das Grid Layout.</p> 
+    <p>Für den Aufbau einer Tabelle der Gitterstruktur sind mehrere Elemente verantwortlich. Im einfachsten Fall besteht eine Tabelle aus Tabellenzeilen, in welchen sich Tabellenzellen befinden.</p> 
+    <br>
+    <h3>Beispiel:</h3> 
+    <table class="tabellen">
+      <tr>
+        <td>Inhalt</td>
+      </tr>
+    </table><br>
+    <p>Dieses (sinnfreie) Beispiel definiert eine Tabelle, welche nur aus einer einzigen Zelle besteht.</p> 
+    <p>&lt;table&gt; leitet eine Tabelle ein (table = Tabelle).</p> 
+    <p>&lt;tr&gt; leitet eine neue Tabellenzeile ein (tr = table row = Tabellenzeile). Im Anschluss daran werden die Zellen (Spalten) der betreffenden Reihe definiert. Am Ende einer Tabellenzeile wird ein abschließendes Tag &lt;/tr&gt; notiert.</p> 
+    <p>Eine Tabellenzeile kann Kopfzellen oder gewöhnliche Datenzellen enthalten.</p> 
+    <br>
+    <p>&lt;th&gt; leitet eine Kopfzelle ein (th = table header = Tabellenkopf),</p> 
+    <p>&lt;td&gt; eine normale Datenzelle (td = table data = Tabellendaten). Der Inhalt einer Zelle wird jeweils hinter dem Start-Tag notiert. In einer Tabellenzelle können beliebige Elemente stehen, d. h. außer normalem Text z. B. auch andere Stil-Elemente (phrasing content).</p> 
+    <p>Die folgende Grafik zeigt die Wirkung der HTML-Elemente, die eine Tabelle erzeugen:</p> 
+    <br>
+    <h2>Aufbau einer einfachen HTML-Tabelle Tabelle</h2>
+
+    <table class="tabellen">
+      <tr>
+        <th>Berlin</th>
+        <th>Hamburg</th>
+        <th>München</th>
+      </tr>
+      <tr>
+        <td>Miljöh</td>
+        <td>Kiez</td>
+        <td>Bierdampf</td>
+      </tr>
+      <tr>
+        <td>Buletten</td>
+        <td>Frikadellen</td>
+        <td>Fleischpflanzerl</td>
+      </tr>
+    </table>
+    <br>
+    <p>Das Beispiel zeigt eine einfache Tabelle mit drei Zeilen, in denen jeweils drei Zellen definiert wurden. Die erste Zeile enthält Kopfzellen (&lt;th&gt;…&lt;/th&gt;), die beiden anderen Datenzellen (&lt;td&gt;…&lt;/td&gt;). Sie erkennen, dass die Browser ohne weiteres Zutun zwar Kopf- und Datenzellen unterschiedlich formatieren, jedoch keine Rahmenlinien darstellen.</p> 
+    <p>Beachten Sie: Die meisten Browser ergänzen ein fehlendes tbody-Element automatisch.</p> 
+    <p>Beachten Sie: Die Anzahl der Zellen sollte bei jeder Zeile gleich sein, sodass die Tabelle durchweg die gleiche Anzahl Spalten pro Zeile hat. In der ersten Zeile, die Sie definieren, legen Sie deshalb durch die Anzahl der dort definierten Zellen die Anzahl der Spalten Ihrer Tabelle fest.</p> 
+    <p>Tabellenzellen dürfen auch leer sein. Wenn Sie in einer Zeile für eine Spalte keine Daten eingeben wollen, notieren Sie ein einfaches &lt;td&gt;&lt;/td&gt;. Beachten Sie dabei jedoch, dass Web-Browser die Zelle in diesem Fall als "nicht vorhanden" darstellen, da dieses Verhalten der Voreinstellung der CSS-Eigenschaft empty-cells entspricht.</p> 
+    <br>
+    <p>Beachten Sie: Im Gegensatz dazu dürfen in HTML-Versionen unterhalb von HTML5 Tabellenzeilen, also &lt;tr&gt;-Elemente, nicht leer sein.</p>  
+    <p>Sie sollten jedoch auch die Tabelle selbst in mehrere Abschnitte gliedern,</p>  
+    <p> - in maximal einen Tabellenkopf &lt;thead&gt;,</p> 
+    <p> - maximal einen Tabellenfuß &lt;tfoot&gt;</p>  
+    <p> - und mindestens einen Tabellenkörper &lt;tbody&gt;.</p> 
+    <br>
+    <h3>Beispiel:</h3>
+    <table class="tabellen">
+        <thead>
+            <tr>
+              <th>Kopf</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Inhalt</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+              <td>Fuß</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <p>Dabei enthält der Tabellenkopf die Zeilen der einfachen Tabelle, die ausschließlich Kopfzellen enthalten, während der Tabellenkörper die Zeilen enthält, die ausschließlich oder hauptsächlich Datenzellen enthalten. Der Tabellenfuß enthält zusammenfassende oder die Tabelle erläuternde Daten.</p>  
+    <p>Wenn die Tabelle im Ausdruck größer als eine Seite ist, werden die &lt;thead&gt;- und &lt;tfoot&gt;-Teile beim Drucken auf jeder Seite wiederholt.</p>
+    <br><br><br>
+</div>
 
 
 

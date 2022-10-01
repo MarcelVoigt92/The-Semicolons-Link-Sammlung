@@ -1,4 +1,4 @@
-/*-- Start des gesamten Navigations - Bereiches -*/
+/*-- Start des Navigations - Bereiches -*/
 *,
 *::before,
 *::after {
@@ -93,7 +93,20 @@ body {
   margin-left: 50px;
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  height: 100vh;
+}
+
+h1 {
+fontsize: 8rem;
+}
+
+h2 {
+font-size: 5rem;
+}
+
+h3 {
+font-size: 3rem;
 }
 /*-- Ende des Main - Content - Bereiches wenn erforderlich -*/
 .containerone {
@@ -103,27 +116,118 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 150px;
   margin-left: 50px;
+  height: 100vh;
 }
 
 .containerone table {
   width: 60%;
-  border: 1px solid antiquewhite;
+  border: 1px solid antiquewhite !important;
 }
 
 .containerone th td {
   align-items: flex-start;
 }
 table tr {
-  border-bottom: 1px solid antiquewhite;
+  border-bottom: 1px solid antiquewhite !important;
 }
 
 .containertwo,
 .blockelemente,
-.inlineelemente {
+.inlineelemente,
+.formatierung,
+.strukturierung,
+.rahmen {
+  min-height: 100vh;
   margin-top: 50px;
   margin-left: 50px;
   width: 60%;
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.5rem;
+}
+
+.listen,
+.tabellen {
+  min-height: 100%;
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 60%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  /*border: 1px solid antiquewhite !important;*/
+}
+
+.btn {
+  font-size: 1.5rem !important  ;
+}
+
+.rahmenone 
+  {
+    border: 1px solid antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmentwo 
+  {
+    border: 3px dotted antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmenthree 
+  {
+    border: 3px dashed antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmenfour 
+  {
+    border: 3px double antiquewhite ;
+    padding: 1rem;
+  }
+
+.rahmenfive
+  {
+    border: 5px groove antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmensix 
+  {
+    border: 4px inset antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmenseven
+  {
+    border: 4px outset antiquewhite;
+    padding: 1rem;
+  }
+
+.rahmeneight
+  {
+    border-color: antiquewhite red aqua magenta;
+    border-width: 5px 6px 7px 8px;
+    border-style: solid groove dotted double;
+    padding: 1rem;
+  }
+
+.rahmennine
+{
+border-color: antiquewhite;
+border-top-width: 1px;
+border-right-width: 2px;
+border-bottom-width: 3px;
+border-left-width: 4px;
+border-style: solid;
+/*Die Rahmenbreite kann auch zusammengasst werden: border-width: 1px 2px 3px 4px;*/
+padding: 1rem;
+}
+
+/*Listen*/
+.tabellen th,
+.tabellen tr,
+.tabellen td {
+border: 1px solid antiquewhite !important;
+padding: 1rem;
 }
