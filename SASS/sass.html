@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----------------Bootstrap link----------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!------------------------------------------->
+    <link rel="stylesheet" href="../styles/sass.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!--header und nav-->
+    <div class="menubar">
+        <ul>
+            <li class="active"><a href="/index.html"></i>Home</a></li>
+            <li><a href="#">CSS</a>
+                <div class="submenueone">
+                    <ul>
+                        <li><a href="#first">Verlinkung</a></li>
+                        <li><a href="#second">Einheiten</a></li>
+                        <li><a href="#third">reset</a></li>
+                        <li><a href="#forth">Display</a></li>
+
+                        <li><a href="#fifth">Farben</a></li>
+                        <li><a href="#sixth">SASS/SCSS</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li><a href="#">Kontakt</a>
+                <div class="submenueone">
+                    <ul>
+                        <li><a href="#">Admin: Marcel</a></li>
+                        <li><a href="#">Admin: Hosam</a></li>
+                        <li><a href="#">Admin: Thomas</a></li>
+                        <li><a href="#">Admin: Michael</a></li>
+                        <li><a href="#">Admin: Klaus</a></li>
+                        <li><a href="#">Knecht: Ari</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-----------header und nav------------>
+    <div class="container-fluid wrapper">
+
+        <div class="part " id="home">
+            <h1 class="text-center text-light"> CSS</h1>
+            <div id="text" class="col-sm-12 text-light insid-part">
+                <p class="fs-4 text-p">Was ist <abbr title="Cascading Style Sheets">CSS</abbr> : Cascading
+                    Style Sheets ist eine <a
+                        href="https://de.wikipedia.org/wiki/Stylesheet-Sprache">Stylesheet-Sprache</a> für
+                    elektronische Dokumente und zusammen mit <em class="text-danger">HTML</em> und <em
+                        class="text-danger">JavaScript</em> eine
+                    der Kernsprachen des World Wide Webs.Sie ist ein sogenannter living standard, lebendiger
+                    Standard, und wird vom <a href="https://www.w3schools.com">World Wide Web Consortium</a> (W3C)
+                    beständig weiterentwickelt. Mit CSS
+                    werden Gestaltungsanweisungen erstellt, die vor allem zusammen mit den Auszeichnungssprachen
+                    HTML und XML (zum Beispiel bei SVG) eingesetzt werden.
+                </p>
+
+            </div>
+            <div id="auf-mich" class=" col-sm-12 insid-part">
+                <p class=" fs-3">Warum style ? <br> CSS geben Sie Ihrem Projekt einen Hauch von Persönlichkeit und
+                    Einzigartigkeit mit Farbe, Schriftfamilie und vielem mehr <span>wie here </span> <span>oder here
+                    </span> und vieles mehr </p>
+
+
+            </div>
+            <a href="#first"> <button class="btn btn-primary btn-lg">Next Page</button></a>
+        </div>
+        <div class="part " id="first">
+            <h2 class="pt-5 text-light text-center fs-1">Verlinkung</h2>
+
+            <div class="row">
+                <p class="text-light fs-3">Es gibt drei möglicherweise um CSS zu verlinken </p>
+                <div class="col-6">
+                    <h3 class="text-danger">1-Inline CSS</h3>
+                    <img src="../images/Capture.PNG" alt="" style="height: 150px; width: 400px;">
+                    <p class="fs-3 text-light">Wir müssen diese Methode vermeiden, da sie die höchste Priorität hat
+                        und wir sie nicht einfach ändern können, wenn wir viele Codezeilen haben</p>
+                </div>
+                <div class="col-6">
+                    <h3 class="text-danger">2-Internal CSS</h3>
+                    <img src="../images/Capture1.PNG" alt="" style="height: 300px; width: 550px;">
+                    <p class="fs-3 text-light">
+                        Diese Art von CSS wird für schnelle Beispiele verwendet und ist auch nicht nützlich, wenn
+                        wir auch viel Code haben
+                    </p>
+                </div>
+                <div class="col-6">
+                    <h3 class="text-danger">3-External CSS</h3>
+                    <img src="../images/Capture3.PNG" alt="">
+                    <p class="fs-3 text-light">
+                        Diese Art von CSS wird für schnelle Beispiele verwendet und ist auch nicht nützlich, wenn
+                        wir auch viel Code haben
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <a href="#home"> <button class="btn btn-primary btn-lg">Last page</button> </a>
+                <a href="#second"> <button class="btn btn-primary btn-lg"> next page</button> </a>
+            </div>
+        </div>
+        <div class="part" id="second">
+            <h2 class="pt-5 text-light text-center fs-1">Einheiten</h2>
+            <p class="text-light fs-2">Einheiten in CSS sind sehr wichtig : die einheiten helfen uns zu spezifizieren,
+                wie groß oder element ist
+            </p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#rem">rem</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#em">em</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#pixel">pixel</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#viewWidth">view
+                Width</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#viewHeight">view
+                Height</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#percentage">percentage(%)</button>
+
+            <div class="d-flex justify-content-between mt-5 pt-5">
+                <a href="#first"> <button class="btn btn-primary btn-lg">Last page</button> </a>
+                <a href="#third"> <button class="btn btn-primary btn-lg"> next page</button> </a>
+            </div>
+        </div>
+        <!--rem Popup-->
+        <div class="modal fade" id="rem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die &lt;rem&gt; - Einheit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Die Einheit &lt;REM&gt; rem hat dieses mal nichts mit Musik zu tun, sondern es ist der
+                            Begriff
+                            der CSS3-Schriftgrößeneinheit rem (= root em) gemeint. rem verhält sich genauso wie em mit
+                            dem einzigen Unterschied, dass das sich der rem-Wert am Root-Element orientiert (also an der
+                            Schriftgröße, für body bzw.</p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">&lt;rem&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--em Popup-->
+        <div class="modal fade" id="em" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;em&gt; - Tag</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Die Einheit &lt;em&gt; Die Einheit em ist einfach nur die Schriftgröße. Innerhalb eines
+                            Elements
+                            mit einem 2in Font, 1em bedeutet genau 2in.</p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">&lt;em&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--px Popup-->
+        <div class="modal fade" id="pixel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die &lt;px&gt; - Einheit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Die Einheit &lt;pixel&gt; Die Einheit px ist die magische Einheit von CSS. Sie ist nicht
+                            abhängig
+                            vom aktuellen Font und steht auch nicht in Verbindung mit den absoluten Einheiten. Die
+                            Einheit px wurde definiert um klein, aber noch sichtbar zu sein.</p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">&lt;pixel&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--vw Popup-->
+        <div class="modal fade" id="viewWidth" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die &lt;vw&gt; - Einheit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Die Einheit &lt;view Width&gt; vw wie auch vh sind Abkürzungen für „viewport width“ und
+                            „viewport
+                            height“. Dabei entspricht eine Einheit vw oder vh gleich 1% der Bildschirm-Breite oder -Höhe
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">&lt;view Width&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--vh Popup-->
+        <div class="modal fade" id="viewHeight" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die &lt;vh&gt; - Einheit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Die Einheit &lt;view Height&gt; vw wie auch vh sind Abkürzungen für „viewport width“ und
+                            „viewport
+                            height“. Dabei entspricht eine Einheit vw oder vh gleich 1% der Bildschirm-Breite oder -Höhe
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">&lt;view Height&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--% Popup-->
+        <div class="modal fade" id="percentage" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die &lt;%&gt; - Einheit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Die Einheit &lt;percentage&gt; Setzt die Schriftgröße auf einen Prozentsatz der Schriftgröße
+                            des Eltern-Elements. Über den Daumen gepeilt kann 1em als 16 Pixel gerechnet werden.</p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/cssref/css_units.asp" target="_blank">&lt;percentage&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part" id="third">
+            <h2 class="pt-5 text-center text-light fs-1">Reset</h2>
+            <p class="fs-3 text-light col-6">Zurücksetzen ist das erste, was Sie tun, wenn Sie mit dem Gestalten Ihrer
+                Seite beginnen. Auf diese Weise haben Sie die Kontrolle über die Position, die Größe und das Layout
+                Ihrer Seite.
+                with the rest you are saying just remove all the margin and padding from all the element .
+                Den Rest identifizieren wir mit dem Element ( * ) , also alles vom größten Kästchen bis zum kleinsten
+                Anchor-Tag
+            </p>
+            <p class="fs-3 text-light col-6"> Der Rest wird so geschrieben : </p>
+            <pre class="text-danger fs-1">
+  * {
+ margin = 0;
+ padding = 0
+   }
+   
+            </pre>
+            <p class="fs-3 text-light col-6"> oder wir können so ein tief rest schreiben : das heißt wir nehmen auch die
+                ELemente das wir durch CSS gestellt werden und rest the Margin und padding
+            </p>
+            <pre class="text-danger fs-1">
+  *, *::after , *::before {
+ margin = 0;
+ padding = 0
+   }
+   
+            </pre>
+
+            <div class="d-flex justify-content-between">
+                <a href="#second"> <button class="btn btn-primary btn-lg">Last page</button> </a>
+                <a href="#forth"> <button class="btn btn-primary btn-lg"> next page</button> </a>
+            </div>
+        </div>
+        <div class="part" id="forth">
+            <h2 class="pt-5 text-center text-light fs-1"> Display </h2>
+            <p class="fs-3 text-light col-6"> Wir verwenden display, um die Elementeigenschaften zu ändern. Jedes
+                Element ist HTML hat seine eigenen
+                Eigenschaften entweder Block , Inline oder Inline-Block.
+                und wir können verwenden, um dem Element neue Eigenschaften wie FLEX oder GRID zu geben </p>
+            <p class="fs-3 text-light col-6">Display wird so verwendet</p>
+            <pre class="text-danger fs-1">
+element{
+    display : flex
+} 
+or
+element2{
+    display : grid
+}
+
+                </pre>
+            <p class="fs-3 text-light col-6"> megr zu lesen über <a
+                    href="https://www.w3schools.com/cssref/pr_class_display.asp" target="_blank">Display</a> </p>
+            <div class="d-flex justify-content-between mt-5 pt-5">
+                <a href="#third"> <button class="btn btn-primary btn-lg">Last page</button> </a>
+                <a href="#fifth"> <button class="btn btn-primary btn-lg"> next page</button> </a>
+            </div>
+        </div>
+        <div class="part" id="fifth">
+            <h2 class="pt-5 text-center text-light fs-1"> Farben </h2>
+            <p class="fs-3 text-light col-6"> Farbe in CSS ist eine große Sache, CSS gibt uns eine sehr große Auswahl an
+                Farben, die wir brauchen, wir können die Farbe dem Element mit der Tag-Farbe hinzufügen</p>
+            <pre class="text-danger fs-3">
+element{
+    color : blue
+}
+or
+elemnt2 {
+    color : rgba(25, 140 , 96 , .5 )
+
+}
+                </pre>
+            <p class="fs-3 text-light col-6">Colors Systems in CSS</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#rgb">RGB</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#rgba">RGBA</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#hex">hexadecimal</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#hsl">HSL</button>
+            <div class="d-flex justify-content-between mt-5 pt-5">
+                <a href="#forth"> <button class="btn btn-primary btn-lg">Last page</button> </a>
+                <a href="#sixth"> <button class="btn btn-primary btn-lg"> next page</button> </a>
+            </div>
+        </div>
+        <!--RBG-->
+        <div class="modal fade" id="rgb" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;em&gt; - Tag</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>In CSS, a color can be specified as an RGB value, using this formula:
+
+                            rgb(red, green, blue)
+
+                            Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.
+
+                            For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value
+                            (255) and the others are set to 0.
+
+                            To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+
+                            To display white, set all color parameters to 255, like this: rgb(255, 255, 255).</p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">&lt;RGB&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--RBGA-->
+        <div class="modal fade" id="rgba" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;em&gt; - Tag</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>RGBA color values are an extension of RGB color values with an alpha channel - which
+                            specifies the opacity for a color.
+
+                            An RGBA color value is specified with:
+
+                            rgba(red, green, blue, alpha)
+
+                            The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at
+                            all):</p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">&lt;RGBA&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--HEX-->
+        <div class="modal fade" id="hex" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;em&gt; - Tag</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Die gebräuchlichste und älteste Technik für die Angabe einer Farbe in CSS ist die Zuweisung
+                            eines Hexcodes für die drei Farben: Jede Farbe wird aus Rot, Grün und Blau gemischt Schwer
+                            nachvollziehbar: Die ersten beiden Farben sind sich sehr ähnlich, obwohl ihre Hexwerte so
+                            unterschiedlich ist. Die Hexwerte des zweiten und dritten Farbmusters unterscheiden sich
+                            kaum, aber die Farben differieren.
+
+                            Das ist wenig intuitiv und gleichzeitig fehlerträchtig. Da hilft es auch nicht, dass der
+                            sechsstellige Hexcode abgekürzt werden darf, wenn je zwei Werte in allen drei Paaren gleich
+                            sind:
+                            color: #aabbcc; | color: #abc;
+                            Groß- oder Kleinschreibung spielt bei Hex keine Rolle. #9ab8a9; ist dasselbe wie #9AB8A9;.
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/colors/colors_hexadecimal.asp"
+                            target="_blank">&lt;HEX&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--HSL-->
+        <div class="modal fade" id="hsl" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Der &lt;em&gt; - Tag</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>In CSS kann eine Farbe mithilfe von Farbton, Sättigung und Helligkeit (HSL) in der Form
+                            angegeben werden:
+
+                            hsl( Farbton , Sättigung , Helligkeit )
+
+                            Der Farbton ist ein Grad auf dem Farbrad von 0 bis 360. 0 ist rot, 120 ist grün und 240 ist
+                            blau.
+
+                            Die Sättigung ist ein Prozentwert. 0 % bedeutet einen Grauton und 100 % ist die volle Farbe.
+
+                            Helligkeit ist auch ein Prozentsatz. 0 % ist schwarz, 50 % ist weder hell noch dunkel, 100 %
+                            ist weiß
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/css/css_colors_hsl.asp#:~:text=HSL%20Value&text=Hue%20is%20a%20degree%20on,Saturation%20is%20a%20percentage%20value."
+                            target="_blank">&lt;HSL&gt;</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part" id="sixth">
+            <h2 class="pt-5 text-center text-light fs-1"> SASS/SCSS </h2>
+            <p class="text-danger fs-2">Was ist Sass?</p>
+            <p class="text-light fs-3">Sass ist wohl die nützlichste aller CSS-Erweiterungen. Sass (Syntactically
+                Awesome Style Sheets) ist eine Erweiterung von CSS, die es Dir ermöglicht, Dinge wie Variablen,
+                verschachtelte Regeln, Inline-Importe und mehr zu verwenden. Sass hilft Dir auch, die Dinge zu
+                organisieren, und ermöglicht es Dir, Stylesheets insgesamt schneller zu erstellen.
+
+                Sass ist mit allen Versionen von CSS kompatibel. Die einzige Voraussetzung für die Nutzung ist, dass Du
+                Ruby installiert haben musst. Zugleich solltest Du die Sass Community Guidelines befolgen.</p>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#syntax">Syntax</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#variablen">Variablen</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#verschachtelungen">Verschachtelungen</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#partiale">Partiale</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#importieren">Importieren</button>
+            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
+                data-bs-target="#mixins">Mixins</button>
+            <p class="text-light fs-3 mt-5"> am ende SASS und SCSS sind gleich aber mit SCSS muss {} nach jeder ELement
+                und
+                nach jeder eigenschaft muss ; gesetzt werden</p>
+        </div>
+        <!--Syntax-->
+        <div class="modal fade" id="syntax" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Syntax</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Sass enthält zwei Syntaxoptionen:
+                            SCSS (Sassy CSS): Verwendet die Dateiendung.scss und ist vollständig kompatibel mit der
+                            CSS-Syntax.
+                            Eingerückt (einfach “Sass” genannt): Verwendet die Dateiendung .sass und Einrückung anstelle
+                            von Klammern. Diese Syntax ist nicht vollständig mit der CSS-Syntax kompatibel, aber sie ist
+                            schneller zu schreiben.
+
+                            Beachte dabei, dass Dateien mit dem Befehl sass-convert von einer Syntax in die andere
+                            konvertiert werden können
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/sass/sass_intro.php" target="_blank">Syntax</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--variables-->
+        <div class="modal fade" id="variablen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Variablen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Genau wie Programmiersprachen (auch wenn Sass eine Stylesheet-Sprache ist) erlaubt Sass die
+                            Verwendung von Variablen, die Informationen speichern können, die Du in Deinem Stylesheet
+                            verwenden kannst. Du kannst beispielsweise einen Farbwert in einer Variablen am Anfang der
+                            Datei speichern und diese Variable dann bei der Einstellung der Farbe der einzelnen Elemente
+                            verwenden. Auf diese Weise kannst Du die Farben schnell ändern, ohne jede Zeile einzeln
+                            bearbeiten zu müssen.
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/sass/sass_variables.php" target="_blank">Variable</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--verschachtelungen-->
+        <div class="modal fade" id="verschachtelungen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">verschachtelungen</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>erschachtelungen sind ein zweischneidiges Schwert. Es ist zwar eine ausgezeichnete Methode
+                            zur Reduzierung der Menge an Code, die Du schreiben musst, kann aber auch zu
+                            überqualifiziertem CSS führen, wenn es nicht sorgfältig ausgeführt wird. Die Idee ist, Deine
+                            CSS-Selektoren so zu verschachteln, dass sie Deine HTML-Hierarchie nachahmen.
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/sass/sass_variables.php"
+                            target="_blank">verschachtelungen</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Partiale-->
+        <div class="modal fade" id="partiale" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Partiale</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>Partials sind kleinere Sass-Dateien, die in andere Sass-Dateien importiert werden können
+                            (siehe nächster Abschnitt). Stelle Dir Partiale als Codeausschnitte vor. Mit diesen
+                            Codeausschnitten kann Dein CSS jetzt modular und wartungsfreundlich gestaltet werden. Eine
+                            Teildatei wird als solcher bezeichnet, indem man ihn mit einem führenden Unterstrich
+                            benennt: _partial.scss.
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/sass/sass_import.php" target="_blank">Partiale</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Importieren-->
+        <div class="modal fade" id="importieren" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-3" id="staticBackdropLabel">Importieren</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body fs-4">
+                        <p>In Verbindung mit Partials (siehe vorheriger Abschnitt) ermöglicht die @import-Anweisung den
+                            Import Deiner Teildateien in die aktuelle Datei, um eine einzige CSS-Datei zu erstellen.
+                            Achte dabei darauf, wie viele Importe, die Du als HTTP-Request verwendest, für jeden
+                            Einzelnen erzeugt werden.
+                        </p>
+                        <p>Weitere Infos:</p>
+                        <a href="https://www.w3schools.com/sass/sass_import.php" target="_blank">Importieren</a>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
