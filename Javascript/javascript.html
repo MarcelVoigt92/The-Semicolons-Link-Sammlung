@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/html_styles.css">
+    <title>HTML5</title>
+    <script src="https://kit.fontawesome.com/d8b8a17485.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <!--Navbereich-->
+    <div class="menubar">
+        <ul>
+          <li class="active"><a href="/index.html"></i>Home</a></li>
+          <li><a href="#">HTML5</a>
+              <div class="submenueone">
+                <ul>
+                    <li><a href="#">Webseiten-Struktur</a></li> 
+                    <li><a href="#">Text-Formatierung</a></li>
+                    <li><a href="#">Text-Strukturierung</a></li>
+                    <li><a href="#">Rahmen</a></li>
+                    <li><a href="#">Listen</a></li>
+                    <li><a href="#">Tabellen</a></li>
+                </ul>
+              </div>
+          </li>
+
+          <li><a href="#">Kontakt</a>
+            <div class="submenueone">
+              <ul>
+                <li><a href="#">Admin: Marcel</a></li>
+                <li><a href="#">Admin: Hosam</a></li>
+                <li><a href="#">Admin: Thomas</a></li>
+                <li><a href="#">Admin: Michael</a></li>
+                <li><a href="#">Admin: Klaus</a></li>
+                <li><a href="#">Knecht: Ari</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <h1>Was ist Javascript?</h1>
+    <h3>Definition laut Wikipedia:</h3>
+    <p>JavaScript (kurz JS) ist eine Skriptsprache, die ursprünglich 1995 von Netscape für dynamisches HTML in Webbrowsern entwickelt wurde, um Benutzerinteraktionen auszuwerten, Inhalte zu verändern, nachzuladen oder zu generieren und so die Möglichkeiten von HTML zu erweitern. Heute wird JavaScript auch außerhalb von Browsern angewendet, etwa auf Servern und in Microcontrollern.</p>
+    <p>Der heutige Name der ursprünglich LiveScript genannten Sprache entstand 1996 aus einer Kooperation von Netscape mit Sun Microsystems. Deren Java-Applets, erstellt mit der gleichfalls 1995 veröffentlichten Programmiersprache Java, wurden mithilfe von LiveScript in den Netscape Navigator integriert. Um die Popularität von Java zu nutzen, wurde LiveScript in JavaScript umbenannt, obwohl die beiden Sprachen voneinander unabhängig entwickelt wurden und völlig unterschiedliche Grundkonzepte aufweisen.</p>            
+    <p>Der als ECMAScript (ECMA 262) standardisierte Sprachkern von JavaScript beschreibt eine dynamisch typisierte, objektorientierte, aber klassenlose Skriptsprache. Sie wird allen objektorientierten Programmierparadigmen unter anderem auf der Basis von Prototypen gerecht, deren Deklaration ab ECMAScript 6 mit einer Syntax ermöglicht wird, wie sie ähnlich auch bei klassenbasierten Programmiersprachen üblich ist. In JavaScript lässt sich je nach Bedarf objektorientiert, prozedural oder funktional programmieren</p>
+
+    <h3>Typische Anwendungsgebiete</h3>
+    
+    <p>Typische Anwendungsgebiete von JavaScript im Webbrowser sind:</p> 
+    <ul>
+        <li>dynamische Manipulation von Webseiten über das Document Object Model</li>
+        <li>Plausibilitätsprüfung (Datenvalidierung) von Formulareingaben noch vor der Übertragung zum Server</li>
+        <li>Anzeige von Dialogfenstern</li>
+        <li>Senden und Empfangen von Daten, ohne dass der Browser die Seite neu laden muss (Ajax)</li>
+        <li>Vorschlagen von Suchbegriffen während der Eingabe</li>
+        <li>Werbebanner oder Laufschriften</li>
+        <li>Verschleierung von E-Mail-Adressen zur Bekämpfung von Spam</li>
+        <li>mehrere Frames auf einmal wechseln oder die Seite aus dem Frameset lösen</li>
+        <li>Schreib- und Lesezugriff auf Cookies und den Web Storage innerhalb des Browsers</li>
+    </ul>
+    <br>
+    <h3>Missbrauch</h3>
+    <p>Einige Anwendungen, die mit JavaScript möglich sind, agieren teilweise gegen den Wunsch des Benutzers oder widersprechen dem Prinzip der geringsten Verwunderung. Einige Browser bieten daher Funktionen an, die derartige JavaScript-Funktionen unterdrücken.</p> 
+    <p>Beispiele:</p> 
+    <ul>
+        <li>Hinweis im Firefox-Browser bei vielen Dialogfenstern</li>
+        <li>Verschleiern von Internetadressen, auf die ein Link verweist</li>
+        <li>Deaktivieren des Kontextmenüs, um zu erschweren, dass Bilder oder die gesamte Seite abgespeichert werden können</li>
+        <li>Deaktivieren der Kopierfunktion, um zu erschweren, dass Texte oder Bilder kopiert werden können</li>
+        <li>Unaufgeforderte (Werbe-)Pop-ups oder Pop-unders oder aufeinanderfolgende Dialogfenster, die den Benutzer behindern</li>
+        <li>Ungewolltes Schließen des Browserfensters</li>
+        <li>Ungewollte Größenänderung des Browserfensters</li>
+        <li>Barrierearme Webseiten zeichnen sich dadurch aus, dass sie auch bei abgeschaltetem JavaScript möglichst uneingeschränkt nutzbar bleiben. Teilweise schränkt das deaktivierte JavaScript die Benutzbarkeit einer Webseite ein.</li>
+        <li>Maßnahmen, die an den Sicherheitseinstellungen des Browsers vorbei ein Wiedererkennen eines Benutzers bei einem späteren Besuch einer Website erlauben (siehe Anonymität im Internet)</li>
+        <li>Bei anfälligen Webanwendungen kann JavaScript auch von Dritten missbraucht werden, etwa per XSS (Codeeinschleusung).</li>
+    </ul>
+    <br>
+    <h3>Schlüsselworter</h3>
+    <p>Bei den meisten reservierten Wörtern handelt es sich um Schlüsselwörter der Sprache (Keywords), also um Wörter, die eine bestimmte Bedeutung haben. So wie beispielsweise das Wort function, das zur Definition einer Funktion verwendet werden kann. Die folgende Tabelle zeigt alle reservierten Wörter, bei denen es sich um solche Schlüsselwörter handelt und die unabhängig vom Ausführungsmodus des Programms geschützt sind, also nicht als Name für Bezeichner verwendet werden dürfen.</p>
+    <br>
+    <table>
+        <tr>
+            <th>Reserviertes Wort</th>
+            <th>Erläuterung</th>
+        </tr>
+        <tr>
+            <td>break</td>
+            <td>Teil einer Abbruchanweisung. Wird verwendet in Schleifen und bei switch.</td>
+        </tr>
+        <tr>
+            <td>case</td>
+            <td>Für Fallunterscheidungen mit switch.</td>
+        </tr>
+        <tr>
+            <td>catch</td>
+            <td>Wird bei der Fehlerbehandlung mit try und catch verwendet.</td>
+        </tr>
+        <tr>
+            <td>class</td>
+            <td>Für die Definition einer Klasse (ES6).</td>
+        </tr>
+        <tr>
+            <td>const</td>
+            <td>Leitet die Deklaration einer oder mehrerer Konstanten ein.</td>
+        </tr>
+        <tr>
+            <td>continue</td>
+            <td>Teil einer Fortsetzungsanweisung.</td>
+        </tr>
+        <tr>
+            <td>debhugger</td>
+            <td>Definiert einen Haltepunkt im Programm für Debugger.</td>
+        </tr>
+        <tr>
+            <td>default</td>
+            <td>Standardklausel bei switch. Auch verwendet bei Standardexport in einem Modul.</td>
+        </tr>
+        <tr>
+            <td>delete</td>
+            <td>Operator zum Löschen von Objekteigenschaften.</td>
+        </tr>
+        <tr>
+            <td>do</td>
+            <td>Für Schleifen mit do und while.</td>
+        </tr>
+        <tr>
+            <td>else</td>
+            <td>Teil einer bedingten Anweisung mit if.</td>
+        </tr>
+        <tr>
+            <td>export</td>
+            <td>Wird bei der Deklaration eines Exports in einem Modul verwendet.</td>
+        </tr>
+        <tr>
+            <td>extends</td>
+            <td>Mit dem Schlüsselwort extends kann eine abgeleitete Klasse definiert werden.</td>
+        </tr>
+        <tr>
+            <td>finaly</td>
+            <td>Kann bei der Fehlerbehandlung mit try und catch verwendet werden.</td>
+        </tr>
+        <tr>
+            <td>for</td>
+            <td>Wird in verschiedenen Schleifen verwendet.</td>
+        </tr>
+        <tr>
+            <td>function</td>
+            <td>Schlüsselwort zur Definition einer Funktion.</td>
+        </tr>
+        <tr>
+            <td>if</td>
+            <td>Für bedingte Anweisungen.</td>
+        </tr>
+        <tr>
+            <td>import</td>
+            <td>Wird verwendet bei der Deklaration eines Imports aus einem Modul.</td>
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>Operator in einem relationalen Ausdruck. Auch verwendet in einer Schleife mit for.</td>
+        </tr>
+        <tr>
+            <td>instanceof</td>
+            <td>Hiermit kann geprüft werden, ob ein Objekt eine Instanz eines Konstruktors ist.</td>
+        </tr>
+        <tr>
+            <td>new</td>
+            <td>Operator für den Konstruktorenaufruf.</td>
+        </tr>
+        <tr>
+            <td>return</td>
+            <td>Teil der Rückgabeanweisung einer Funktion.</td>
+        </tr>
+        <tr>
+            <td>super</td>
+            <td>Schlüsselwort zum Methoden- oder Konstruktorenaufruf in Objekt oder abgeleiteter Klasse.</td>
+        </tr>
+        <tr>
+            <td>switch</td>
+            <td>Für Fallunterscheidungen.</td>
+        </tr>
+        <tr>
+            <td>this</td>
+            <td>Eingebaute Kontextvariable von Funktionen.</td>
+        </tr>
+        <tr>
+            <td>throw</td>
+            <td>Erzeugt eine benutzerdefinierte Ausnahme.</td>
+        </tr>
+        <tr>
+            <td>try</td>
+            <td>Wird bei der Fehlerbehandlung mit try und catch verwendet.</td>
+        </tr>
+        <tr>
+            <td>typeof</td>
+            <td>Operator, der den Datentyp des Operanden zurückgibt.</td>
+        </tr>
+        <tr>
+            <td>var</td>
+            <td>Schlüsselwort für die Deklaration einer oder mehrerer Variablen.</td>
+        </tr>
+        <tr>
+            <td>void</td>
+            <td>Wertet den Ausdruck auf der rechten Seite aus und gibt standardmäßig undefined zurück.</td>
+        </tr>
+        <tr>
+            <td>while</td>
+            <td>Wird bei Schleifen verwendet.</td>
+        </tr>
+        <tr>
+            <td>with</td>
+            <td>wurde früher verwendet, um mehrere Anweisungen mit einem Objekt durchzuführen.</td>
+        </tr>
+        <tr>
+            <td>yield</td>
+            <td>Pausiert die Ausführung einer Generatorfunktion.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Darüber hinaus gibt es noch zwei Schlüsselwörter, die nur im Strict Mode reserviert sind, deren Verwendung also nur in diesem Ausführungsmodus einen Syntaxfehler produziert. Es ist allerdings davon abzuraten, diese Wörter als Name für einen Bezeichner zu verwenden, auch wenn dies im normalen Ausführungsmodus grundsätzlich möglich wäre, da hierbei die Lesbarkeit und damit auch die Wartbarkeit des Codes beeinträchtigt wird.</td>
+        </tr>
+        <tr>
+            <td>let</td>
+            <td>Leitet die Deklaration einer oder mehrerer Variablen ein.</td>
+        </tr>
+        <tr>
+            <td>static</td>
+            <td>Wird verwendet um innerhalb einer Klasse eine eigene Methode zu definieren.</td>
+        </tr>
+    </table>
+        <br>
+        <h3>Konstanten</h3>
+        <p>Weiterhin gibt es in JavaScript einige eingebaute Konstanten (Literals), bei denen es sich ebenfalls um reservierte Wörter handelt und deren Gebrauch entsprechend eine Ausnahme produziert, nämlich die primitiven Werte vom Datentyp Boolean und Null. Bei dem primitiven Wert undefined handelt es sich hingegen nicht um ein reserviertes Wort, weder im normalen noch im strikten Ausführungsmodus. Allerdings ist auch hier von der Verwendung als Name für einen Bezeichner abzuraten.</p>
+        <table>
+            <th>
+                <td>Reserviertes Wort</td>
+                <td>Erläuterung</td>                 
+            </th>
+            <tr>
+                <td>null</td>
+                <td>Repräsentiert die beabsichtigte Abwesenheit eines Wertes.</td>
+            </tr>
+            <tr>
+                <td>false</td>
+                <td>Boolescher Wert, der für falsch steht.</td>
+            </tr>
+            <tr>
+                <td>true</td>
+                <td>Boolescher Wert, der für wahr steht.</td>
+            </tr>
+        </table>
+        <br>
+        <h3>Für die Zukunft reservierte Wörter</h3>
+        <p>Schließlich gibt es noch einige für die zukünftige Entwicklung der Sprache reservierte Wörter (Future Reserved Words), die ebenfalls nicht in Bezeichnernamen verwendet werden sollten. Aber auch hier sind einige Eigenheiten zu beachten. So erzeugt die Verwendung des für die Zukunft reservierten Wortes enum grundsätzlich einen Syntaxfehler, während das Wort await wie in der Einleitung bereits gesehen nur dann geschützt ist, wenn es im Code eines Moduls verwendet wird.</p>
+        <ul>
+            <li>implements</li>
+            <li>interface</li>
+            <li>package</li>
+            <li>private</li>
+            <li>protected</li>
+            <li>public</li>
+        </ul>
+        <br>
+        <p>Die oben aufgelisteten Wörter sind nur dann reserviert, wenn das Programm im Strict Mode ausgeführt wird. Jedoch gilt auch hier, dass von der Verwendung diese Wörter als Namen für Bezeichner von Variablen, Konstanten oder Funktionen abzuraten ist, selbst wenn das im normalen Modus möglich wäre.</p>
+
+        
+        
+        
+        
+        
+        
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+<!--Schlussbereich-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
