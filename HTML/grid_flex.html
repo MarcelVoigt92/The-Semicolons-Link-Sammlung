@@ -73,10 +73,15 @@
 
             <p>Um einem Element (welches auch der Body sein kann) mit Grid zu rastern benutzen wir den Befehl <code>display: grid;</code> </p>
             <p>Um unsere Spalten einzuteilen haben wir <code>grid-template-columns: x, y ,z;</code>, was in diesem Fall 3 Columns ist. Diesen können wir entweder feste Größen geben (px,em,rem) oder sie sich selber mit fr aufteilen lassen. Wobei sich FR auf den noch verfügbaren Platz bezieht, falls wir feste Größen mit FR mixen.</p>
-
+        </div>
+             <div class="js">
             <div id="input">
-              <label for="value">grid-template-columns:</label>
-              <input type="text" name="value" id="value" value=""> ; <button onclick="showGridCol()"> test it</button>
+              <label for="valueCol">grid-template-columns:</label>
+              <input type="text" name="valueCol" id="valueCol" value=""> ;
+              <label for="valueRow">grid-template-rows:</label>
+              <input type="text" name="valueRow" id="valueRow" value=""> ;
+              
+              <button onclick="showGrid()"> test it</button>
             </div>
             <div id="output">
             </div>
