@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/html_styles.css">
+    <title>HTML5</title>
+    <script src="https://kit.fontawesome.com/d8b8a17485.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <!--Navbereich-->
+    <div class="menubar">
+        <ul>
+          <li class="active"><a href="/index.html"></i>Home</a></li>
+          <li><a href="#">HTML5</a>
+              <div class="submenueone">
+                <ul>
+                    <li><a href="#">Webseiten-Struktur</a></li> 
+                    <li><a href="#">Text-Formatierung</a></li>
+                    <li><a href="#">Text-Strukturierung</a></li>
+                    <li><a href="#">Rahmen</a></li>
+                    <li><a href="#">Listen</a></li>
+                    <li><a href="#">Tabellen</a></li>
+                </ul>
+              </div>
+          </li>
+
+          <li><a href="#">Kontakt</a>
+            <div class="submenueone">
+              <ul>
+                <li><a href="#">Admin: Marcel</a></li>
+                <li><a href="#">Admin: Hosam</a></li>
+                <li><a href="#">Admin: Thomas</a></li>
+                <li><a href="#">Admin: Michael</a></li>
+                <li><a href="#">Admin: Klaus</a></li>
+                <li><a href="#">Knecht: Ari</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+    </div>
+<div class="linkliste">
+<h2>javascript-builtin_functions:</h2>
+<br>
+<hr>
+<br>
+<p>Functions are one of the fundamental building blocks in JavaScript. A function in JavaScript is similar to a procedure—a set of statements that performs a task or calculates a value, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output. To use a function, you must define it somewhere in the scope from which you wish to call it.</p>
+<br>
+<h3>Function declarations</h3>
+<br>
+<p>A function definition &#040;also called a function declaration, or function statement&#041; consists of the function keyword, followed by:</p>
+<p>-- The name of the function.</p>
+<p>-- A list of parameters to the function, enclosed in parentheses and separated by commas.</p>
+<p>-- The JavaScript statements that define the function, enclosed in curly brackets, { /* … */ }.</p> 
+<br>
+<hr>
+<br>
+<p>Funktionen sind die grundlegenden Bausteine ​​in JavaScript. Eine Funktion in JavaScript ähnelt einer Prozedur – einer Reihe von Anweisungen, die eine Aufgabe ausführen oder einen Wert berechnen. Damit eine Prozedur als Funktion qualifiziert werden kann, sollte sie einige Eingaben annehmen und eine Ausgabe zurückgeben, bei der eine offensichtliche Beziehung zwischen ihnen besteht ==> Eingang und Ausgang. Um eine Funktion zu verwenden, müssen Sie sie irgendwo in dem Gültigkeitsbereich definieren, von dem aus Sie sie aufrufen möchten.</p>
+<br>
+<h3>Funktionsdeklarationen</h3>
+<br>
+ <p>Eine Funktionsdefinition &#040;auch Funktionsdeklaration oder Funktionsanweisung genannt&#041; besteht aus dem Schlüsselwort function, gefolgt von:</p>
+<p>-- Der Name der Funktion.</p>  
+<p>-- Eine Liste von Parametern für die Funktion, die in Klammern eingeschlossen und durch Kommas getrennt sind</p>  
+<p>-- Die JavaScript-Anweisungen, die die Funktion definieren, eingeschlossen in geschweiften Klammern, { /* … */ }.</p> 
+<br>
+<hr>
+<br>
+<h4>Number Methods</h4>
+<br>
+<p>The Number object contains only the default methods that are part of every object's definition.</p>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#constructor">constructor&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toExponential">toExponential&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toFixed">toFixed&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toLocalString">toLocalString&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toPrecision">toPrecision&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toString">toString&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valueOf">valueOf&#040;&#041;</button>
+
+<!-- Modal-Popup "constructor"-->
+  <div class="modal fade" id="constructor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die constructor&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns the function that created this object's instance. By default this is the Number object.</p>
+          <p>Gibt die Funktion zurück, die die Instanz dieses Objekts erstellt hat. Standardmäßig ist dies das Number-Objekt.</p>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/number_constructor.htm" target="_blank">constructor&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal-Popup "toExponential"-->
+    <div class="modal fade" id="toExponential" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toExponential&#040;&#041; - Function</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+        <p>Forces a number to display in exponential notation, even if the number is in the range in which JavaScript normally uses standard notation.</p>
+        <p>Erzwingt die Anzeige einer Zahl in Exponentialschreibweise, selbst wenn die Zahl in dem Bereich liegt, in dem JavaScript normalerweise die Standardschreibweise verwendet.</p>
+        <p>Weitere Infos:</p>
+        <a href="https://www.tutorialspoint.com/javascript/number_toexponential.htm" target="_blank">toExponential&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+    </div>
+<!-- Modal-Popup "toFixed"-->
+    <div class="modal fade" id="toFixed" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toFixed&#040;&#041; - Function</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+        <p>Formats a number with a specific number of digits to the right of the decimal.</p>
+        <p>Formatiert eine Zahl mit einer bestimmten Anzahl von Ziffern rechts vom Dezimalkomma.</p>
+        <p>Weitere Infos:</p>
+        <a href="https://www.tutorialspoint.com/javascript/number_tofixed.htm" target="_blank">toFixed&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+    </div>
+<!-- Modal-Popup "toLocalString"-->
+    <div class="modal fade" id="toLocalString" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toLocalString&#040;&#041; - Function</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+        <p>Returns a string value version of the current number in a format that may vary according to a browser's locale settings.</p>
+        <p>Gibt eine Zeichenfolgenwert der aktuellen Zahl in einem Format zurück, das je nach den Gebietsschemaeinstellungen eines Browsers variieren kann.</p>
+        <p>Weitere Infos:</p>
+        <a href="https://www.tutorialspoint.com/javascript/number_tolocalestring.htm" target="_blank">Die toLocalString&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+    </div>
+<!-- Modal-Popup "toPrecision"-->
+    <div class="modal fade" id="toPrecision" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toPrecision&#040;&#041; - Function</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+        <p>Defines how many total digits (including digits to the left and right of the decimal) to display of a number.</p>
+        <p>Legt fest, wie viele Stellen insgesamt (einschließlich Stellen links und rechts vom Dezimalkomma) einer Zahl angezeigt werden.</p>
+        <p>Weitere Infos:</p>
+        <a href="https://www.tutorialspoint.com/javascript/number_toprecision.htm" target="_blank">toPrecision&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+    </div>
+<!-- Modal-Popup "toString"-->
+    <div class="modal fade" id="toString" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toString&#040;&#041; - Function</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+        <p>Returns the string representation of the number's value.</p>
+        <p>Gibt die Zeichenfolgendarstellung des Werts der Zahl zurück.</p>
+        <p>Weitere Infos:</p>
+        <a href="https://www.tutorialspoint.com/javascript/number_tostring.htm" target="_blank">toString&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+    </div>
+<!-- Modal-Popup "valueOf"-->
+    <div class="modal fade" id="valueOf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title fs-3" id="staticBackdropLabel">Die valueOf&#040;&#041; - Function</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+        <p>Returns the number's value.</p>
+        <p>Gibt den Wert der Zahl zurück.</p>
+        <p>Weitere Infos:</p>
+        <a href="https://www.tutorialspoint.com/javascript/number_valueof.htm" target="_blank">valueOf&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h4>Boolean Methods</h4>
+    <br>
+    <p>Here is a list of each method and its description.</p>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toSource">toSource&#040;&#041;</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toString">toString&#040;&#041;</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valueOf">valueOf&#040;&#041;</button>
+    
+    
+<!-- Modal-Popup "toSource"-->
+      <div class="modal fade" id="toSource" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toSource&#040;&#041; - Function</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+              <p>Returns a string containing the source of the Boolean object; you can use this string to create an equivalent object.</p>
+              <p>Gibt einen String zurück, der die Quelle des booleschen Objekts true &#040;wahr&#041; und false &#040;falsch&#041; enthält; Sie können diese Zeichenfolge verwenden, um ein entsprechendes Objekt zu erstellen.</p>
+              <p>Weitere Infos:</p>
+              <a href="https://www.tutorialspoint.com/javascript/boolean_tosource.htm" target="_blank">toSource&#040;&#041;</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- Modal-Popup "toString"-->
+        <div class="modal fade" id="toString" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toString&#040;&#041; - Function</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Returns a string of either "true" or "false" depending upon the value of the object.</p>
+            <p>Gibt abhängig vom Wert des Objekts eine Zeichenfolge von entweder „true“ oder „false“ zurück.</p>
+            <p>Weitere Infos:</p>
+            <a href="https://www.tutorialspoint.com/javascript/boolean_tostring.htm" target="_blank">toString&#040;&#041;</a>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+        </div>
+<!-- Modal-Popup "valueOf"-->
+        <div class="modal fade" id="valueOf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title fs-3" id="staticBackdropLabel">Die valueOf&#040;&#041; - Function</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body fs-4">
+            <p>Returns the primitive value of the Boolean object.</p>
+            <p>Gibt den Grundwert des booleschen Objekts zurück.</p>
+            <p>Weitere Infos:</p>
+            <a href="https://www.tutorialspoint.com/javascript/boolean_valueof.htm" target="_blank">valueOf&#040;&#041;</a>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h4>String Methods</h4>
+        <br>
+        <p>Here is a list of each method and its description.</p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#charAt">charAt&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#charCodeAt">charCodeAt&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#concat">concat&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#indexOf">indexOf&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lastIndexOf">lastIndexOf&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#localeCompare">localeCompare&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#length">length&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#match">match&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#replace">replace&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#search">search&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#slice">slice&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#split">split&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#substr">substr&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#substring">substring&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toLocaleLowerCase">toLocaleLowerCase&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toLowerCase">toLowerCase&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toString">toString&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toUpperCase">toUpperCase&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toString">toString&#040;&#041;</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valueOf">valueOf&#040;&#041;</button>
+        
+        
+    <!-- Modal-Popup "toSource"-->
+          <div class="modal fade" id="toSource" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toSource&#040;&#041; - Function</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-4">
+                  <p>Returns a string containing the source of the Boolean object; you can use this string to create an equivalent object.</p>
+                  <p>Gibt einen String zurück, der die Quelle des booleschen Objekts true &#040;wahr&#041; und false &#040;falsch&#041; enthält; Sie können diese Zeichenfolge verwenden, um ein entsprechendes Objekt zu erstellen.</p>
+                  <p>Weitere Infos:</p>
+                  <a href="https://www.tutorialspoint.com/javascript/boolean_tosource.htm" target="_blank">toSource&#040;&#041;</a>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    <!-- Modal-Popup "toString"-->
+            <div class="modal fade" id="toString" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toString&#040;&#041; - Function</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-4">
+                <p>Returns a string of either "true" or "false" depending upon the value of the object.</p>
+                <p>Gibt abhängig vom Wert des Objekts eine Zeichenfolge von entweder „true“ oder „false“ zurück.</p>
+                <p>Weitere Infos:</p>
+                <a href="https://www.tutorialspoint.com/javascript/boolean_tostring.htm" target="_blank">toString&#040;&#041;</a>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+            </div>
+    <!-- Modal-Popup "valueOf"-->
+            <div class="modal fade" id="valueOf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title fs-3" id="staticBackdropLabel">Die valueOf&#040;&#041; - Function</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body fs-4">
+                <p>Returns the primitive value of the Boolean object.</p>
+                <p>Gibt den Grundwert des booleschen Objekts zurück.</p>
+                <p>Weitere Infos:</p>
+                <a href="https://www.tutorialspoint.com/javascript/boolean_valueof.htm" target="_blank">valueOf&#040;&#041;</a>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+            </div>
+    
+    
+
+    </div>
+    <!--Schlussbereich-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
+
