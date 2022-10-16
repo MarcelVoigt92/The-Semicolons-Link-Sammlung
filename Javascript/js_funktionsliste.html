@@ -72,13 +72,13 @@
 <br>
 <p>The Number object contains only the default methods that are part of every object's definition.</p>
 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#constructor">constructor&#040;&#041;</button>.</p>   
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toExponential">toExponential&#040;&#041;</button>.</p>      
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toFixed">toFixed&#040;&#041;</button>.</p>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toLocaleString">toLocaleString&#040;&#041;</button>.</p> 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toPrecision">toPrecision&#040;&#041;</button>.</p> 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toString">toString&#040;&#041;</button>.</p> 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valueOf">valueOf&#040;&#041;</button>.</p>  
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#constructor">constructor&#040;&#041;</button>   
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toExponential">toExponential&#040;&#041;</button>     
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toFixed">toFixed&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toLocaleString">toLocaleString&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toPrecision">toPrecision&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toString">toString&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valueOf">valueOf&#040;&#041;</button> 
 <br>
 <!-- Modal-Popup "constructor"-->
   <div class="modal fade" id="constructor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -217,7 +217,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body fs-4">
-          <p>Defines how many total digits (including digits to the left and right of the decimal) to display of a number.</p>
+          <p>Defines how many total digits &#040;including digits to the left and right of the decimal) to display of a number.</p>
           <p>Legt fest, wie viele Stellen insgesamt (einschließlich Stellen links und rechts vom Dezimalkomma) einer Zahl angezeigt werden.</p>
           <br>
           <p>Beispiel:</p>
@@ -304,11 +304,368 @@
       </div>
     </div>
   </div>
+  <br>
+  <hr>
+  <br>
+  <h4>Boolean Methods</h4>
+  <br>
+  <p>Here is a list of each method and its description.</p>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toSource">toSource&#040;&#041;</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toStringB">toString&#040;&#041;</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valueOfB">valueOf&#040;&#041;</button>
+  
+<!-- Modal-Popup "toSource"-->
+  <div class="modal fade" id="toSource" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toSource&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns a string containing the source of the Boolean object; you can use this string to create an equivalent object.</p>
+          <p>Gibt einen String zurück, der die Quelle des booleschen Objekts enthält; Sie können diese Zeichenfolge verwenden, um ein entsprechendes Objekt zu erstellen.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>Note:
+            This method is deprecated. Do not use it.
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.w3schools.com/jsref/jsref_tosource_date.asp" target="_blank">toSource&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal-Popup "toString"-->
+  <div class="modal fade" id="toStringB" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die toString&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns a string of either "true" or "false" depending upon the value of the object.</p>
+          <p>Gibt abhängig vom Wert des Objekts eine Zeichenfolge von entweder „true“ oder „false“ zurück.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>const flag1 = new Boolean(true);
+
+            console.log(flag1.toString());
+            // ===> "true"
+            
+            const flag2 = new Boolean(1);
+            
+            console.log(flag2.toString());
+            // ===> "true"
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/boolean_tostring.htm" target="_blank">toString&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal-Popup "valueOf"-->
+<div class="modal fade" id="valueOfB" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title fs-3" id="staticBackdropLabel">Die valueOf&#040;&#041; - Function</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body fs-4">
+      <p>Returns a string of either "true" or "false" depending upon the value of the object.</p>
+      <p>Gibt abhängig vom Wert des Objekts eine Zeichenfolge von entweder „true“ oder „false“ zurück.</p>
+      <br>
+      <p>Beispiel:</p>
+      <p>const x = new Boolean&#040;&#041;;
+
+        console.log&#040;x.valueOf&#040;&#041;&#041;;
+        // expected output: false
+        
+        const y = new Boolean&#040;'Mozilla'&#041;;
+        
+        console.log&#040;y.valueOf&#040;&#041;&#041;;
+        // expected output: true
+        
+      </p>
+      <br>
+      <p>Weitere Infos:</p>
+      <a href="https://www.tutorialspoint.com/javascript/boolean_valueof.htm" target="_blank">valueOf&#040;&#041;</a>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<hr>
+<br>
+<h4>String Methods</h4>
+<br>
+<p>Here is a list of each method and its description.</p>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#charAt">charAt&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#charCodeAt">charCodeAt&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#concat">concat&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#indexOf">indexOf&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lastIndexOf">lastIndexOf&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#localeCompare">localeCompare&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#length">length&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#match">match&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#replace">replace&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#search">search&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#slice">slice</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#split">split&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#substr">substr&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#substring">substring&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toLocaleLowerCase">toLocaleLowerCase&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toLocaleUpperCase">toLocaleUpperCase&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toLowerCase">toLowerCase&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toString">toString&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#toUpperCase">toUpperCase&#040;&#041;</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#valueOf">valueOf&#040;&#041;</button>
+
+<!-- Modal-Popup "charAt"-->
+    <div class="modal fade" id="charAt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die charAt&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns the character at the specified index.</p>
+          <p>Gibt das Zeichen am angegebenen Index zurück.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>let totn_string = 'TechOnTheNet';
+
+            console.log&#040;totn_string.charAt&#040;0&#041;&#041;;<br>
+            //  ===>  T<br>
+            console.log&#040;totn_string.charAt&#040;1&#041;&#041;;<br>
+            //  ===>  e<br>
+            console.log&#040;totn_string.charAt&#040;2&#041;&#041;;<br>
+            //  ===>  c<br>
+            console.log&#040;totn_string.charAt&#040;3&#041;&#041;;<br>
+            //  ===>  h<br>
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/string_charat.htm" target="_blank">charAt&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "charCodeAt"-->
+    <div class="modal fade" id="charCodeAt" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die charCodeAt&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns a number indicating the Unicode value of the character at the given index.</p>
+          <p>Gibt eine Zahl zurück, die den Unicode-Wert des Zeichens am angegebenen Index angibt.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>let totn_string = 'TechOnTheNet';
+
+            console.log&#040;totn_string.charCodeAt&#040;0&#041;&#041;;<br>
+            //  ===>  84<br>
+            console.log&#040;totn_string.charCodeAt&#040;1&#041;&#041;;<br>
+            //  ===>  101<br>
+            console.log&#040;totn_string.charCodeAt&#040;2&#041;&#041;;<br>
+            //  ===>  99<br>
+            console.log&#040;totn_string.charCodeAt&#040;3&#041;&#041;;<br>
+            //  ===>  104<br>
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/string_charcodeat.htm" target="_blank">charCodeAt&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "concat"-->
+    <div class="modal fade" id="concat" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die concat&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Combines the text of two strings and returns a new string.</p>
+          <p>Kombiniert den Text zweier Strings und gibt einen neuen String zurück.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>let totn_string = 'Tech';<br>
+
+            console.log(totn_string.concat('On','The','Net'));<br>
+            // ===> TechOnTheNet<br>
+            console.log(totn_string);<br>
+            // ===> Tech<br>
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/string_concat.htm" target="_blank">concat&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "indexOf"-->
+    <div class="modal fade" id="indexOf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die indexOf&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns the index within the calling String object of the first occurrence of the specified value, or -1 if not found.</p>
+          <p>Gibt den Index innerhalb des aufrufenden String-Objekts des ersten Vorkommens des angegebenen Werts zurück, oder -1, falls nicht gefunden.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>let totn_string = 'TechOnTheNet';<br>
+
+            console.log&#040;totn_string.indexOf&#040;'t'&#041;&#041;;<br>
+            // ===> 11<br>
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/string_indexof.htm" target="_blank">indexOf&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "lastIndexOf"-->
+    <div class="modal fade" id="lastIndexOf" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die lastIndexOf&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns the index within the calling String object of the last occurrence of the specified value, or -1 if not found.</p>
+          <p>Gibt den Index innerhalb des aufrufenden String-Objekts des ersten Vorkommens des angegebenen Werts zurück, oder -1, falls nicht gefunden.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>let totn_string = 'TechOnTheNet';<br>
+
+            console.log&#040;totn_string.lastIndexOf&#040;'T'&#041;&#041;;<br>
+            // ===> 6<br>
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/string_lastindexof.htm" target="_blank">lastIndexOf&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+<!-- Modal-Popup "localeCompare"-->
+    <div class="modal fade" id="localeCompare" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die localeCompare&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns a number indicating whether a reference string comes before or after or is the same as the given string in sort order.</p>
+          <p>Gibt eine Zahl zurück, die angibt, ob eine Referenzzeichenfolge vor oder nach der angegebenen Zeichenfolge in der Sortierreihenfolge steht oder dieselbe ist.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>const a = 'réservé'; // with accents, lowercase
+            const b = 'RESERVE'; // no accents, uppercase
+            
+            console.log&#040;a.localeCompare&#040;b&#041;&#041;;<br>
+            // ===> 1<br>
+            console.log&#040;a.localeCompare&#040;b, 'en', { sensitivity: 'base' }&#041;&#041;;<br>
+            // ===> 0<br>
+            <br>
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/string_localecompare.htm" target="_blank">localeCompare&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Modal-Popup "length"-->
+    <div class="modal fade" id="length" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fs-3" id="staticBackdropLabel">Die length&#040;&#041; - Function</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body fs-4">
+          <p>Returns the length of the string.</p>
+          <p>Gibt die Länge der Zeichenfolge zurück.</p>
+          <br>
+          <p>Beispiel:</p>
+          <p>const str = 'Life, the universe and everything. Answer:';<br>
+
+            console.log&#040;`${str} ${str.length}`&#041;;<br>
+            // expected output: "Life, the universe and everything.   <br>          
+            // ===>  42"<br>
+            <br>
+          </p>
+          <br>
+          <p>Weitere Infos:</p>
+          <a href="https://www.tutorialspoint.com/javascript/string_length.htm" target="_blank">length&#040;&#041;</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
 
     </div>
     <!--Schlussbereich-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#wbr">wbr</button>.</p>
-  <!-- Modal-Popup "area"-->
+
+
