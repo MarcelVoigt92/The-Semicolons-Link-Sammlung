@@ -25,8 +25,9 @@ body {
 .menubar {
   background: rgba(0, 0, 0, 0.394);
   text-align: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100vw;
 }
 
 .menubar ul {
@@ -98,15 +99,15 @@ body {
 }
 
 h1 {
-fontsize: 8rem;
+  fontsize: 8rem;
 }
 
 h2 {
-font-size: 5rem;
+  font-size: 5rem;
 }
 
 h3 {
-font-size: 3rem;
+  font-size: 3rem;
 }
 /*-- Ende des Main - Content - Bereiches wenn erforderlich -*/
 .containerone {
@@ -130,8 +131,15 @@ font-size: 3rem;
 table tr {
   border-bottom: 1px solid antiquewhite !important;
 }
-#bTTop {
-
+#backToTop a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  position: relative;
+  left: 0;
+  color: antiquewhite;
+  background: #973a18;
+  border-radius: 6px;
+  padding: 10px;
 }
 .containertwo,
 .blockelemente,
@@ -164,72 +172,63 @@ table tr {
   font-size: 1.5rem !important  ;
 }
 
-.rahmenone 
-  {
-    border: 1px solid antiquewhite;
-    padding: 1rem;
-  }
+.rahmenone {
+  border: 1px solid antiquewhite;
+  padding: 1rem;
+}
 
-.rahmentwo 
-  {
-    border: 3px dotted antiquewhite;
-    padding: 1rem;
-  }
+.rahmentwo {
+  border: 3px dotted antiquewhite;
+  padding: 1rem;
+}
 
-.rahmenthree 
-  {
-    border: 3px dashed antiquewhite;
-    padding: 1rem;
-  }
+.rahmenthree {
+  border: 3px dashed antiquewhite;
+  padding: 1rem;
+}
 
-.rahmenfour 
-  {
-    border: 3px double antiquewhite ;
-    padding: 1rem;
-  }
+.rahmenfour {
+  border: 3px double antiquewhite;
+  padding: 1rem;
+}
 
-.rahmenfive
-  {
-    border: 5px groove antiquewhite;
-    padding: 1rem;
-  }
+.rahmenfive {
+  border: 5px groove antiquewhite;
+  padding: 1rem;
+}
 
-.rahmensix 
-  {
-    border: 4px inset antiquewhite;
-    padding: 1rem;
-  }
+.rahmensix {
+  border: 4px inset antiquewhite;
+  padding: 1rem;
+}
 
-.rahmenseven
-  {
-    border: 4px outset antiquewhite;
-    padding: 1rem;
-  }
+.rahmenseven {
+  border: 4px outset antiquewhite;
+  padding: 1rem;
+}
 
-.rahmeneight
-  {
-    border-color: antiquewhite red aqua magenta;
-    border-width: 5px 6px 7px 8px;
-    border-style: solid groove dotted double;
-    padding: 1rem;
-  }
+.rahmeneight {
+  border-color: antiquewhite red aqua magenta;
+  border-width: 5px 6px 7px 8px;
+  border-style: solid groove dotted double;
+  padding: 1rem;
+}
 
-.rahmennine
-{
-border-color: antiquewhite;
-border-top-width: 1px;
-border-right-width: 2px;
-border-bottom-width: 3px;
-border-left-width: 4px;
-border-style: solid;
-/*Die Rahmenbreite kann auch zusammengasst werden: border-width: 1px 2px 3px 4px;*/
-padding: 1rem;
+.rahmennine {
+  border-color: antiquewhite;
+  border-top-width: 1px;
+  border-right-width: 2px;
+  border-bottom-width: 3px;
+  border-left-width: 4px;
+  border-style: solid;
+  /*Die Rahmenbreite kann auch zusammengasst werden: border-width: 1px 2px 3px 4px;*/
+  padding: 1rem;
 }
 
 /*Listen*/
 .tabellen th,
 .tabellen tr,
 .tabellen td {
-border: 1px solid antiquewhite !important;
-padding: 1rem;
+  border: 1px solid antiquewhite !important;
+  padding: 1rem;
 }
