@@ -97,9 +97,18 @@ body {
   width: 60%;
 }
 
-.tabellen th,
-.tabellen tr,
-.tabellen td {
-  border: 1px solid antiquewhite !important;
-  padding: 1rem;
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: black;
 }
