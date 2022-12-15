@@ -12,7 +12,7 @@
 }
 
 body {
-  background-image: url(/images/25.jpg);
+  background-image: url(/images/25.jpg/);
   background-size: cover;
   background-position: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -12,14 +12,17 @@
 }
 
 body {
-  background-image: url(/images/Man_on_the_Moon.jpg);
+  background-image: url(/images/pexels-nemuel-sereti-6424589.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.95 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+
 }
 
 .menubar {

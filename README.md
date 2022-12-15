@@ -16,4 +16,5 @@
       - Bootstrap
       - npm
       - Linux (Terminal usw.)
+      - JavaScript
       
