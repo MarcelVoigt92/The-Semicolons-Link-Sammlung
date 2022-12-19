@@ -23,7 +23,13 @@ body {
 }
 
 .menubar {
-  background: rgba(0, 0, 0, 0.394);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(153, 153, 153, 0.4864320728291317) 100%
+  );
+  z-index: 100;
   text-align: center;
   position: fixed;
   top: 0;
@@ -90,12 +96,12 @@ body {
 
 /*-- Start des Main - Content - Bereiches wenn erforderlich -*/
 .content {
-  margin-top: 150px;
+  margin-top: 110px;
   margin-left: 50px;
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 2rem;
-  height: 100vh;
+  height: 80vh;
 }
 
 h1 {
@@ -117,7 +123,7 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 150px;
   margin-left: 50px;
-  height: 100vh;
+  height: 80vh;
 }
 
 .containerone table {
@@ -142,13 +148,10 @@ table tr {
   padding: 10px;
 }
 .containertwo,
-.blockelemente,
-.inlineelemente,
 .formatierung,
-.strukturierung,
-.rahmen {
-  min-height: 100vh;
-  margin-top: 50px;
+.strukturierung {
+  height: 450px;
+  margin-bottom: 75px;
   margin-left: 50px;
   width: 60%;
   color: antiquewhite;
@@ -156,10 +159,19 @@ table tr {
   font-size: 1.5rem;
 }
 
-.listen,
-.tabellen {
+.blockelemente,
+.inlineelemente {
+  height: 450px;
+  margin-left: 50px;
+  margin-top: 27px;
+  width: 60%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
+.rahmen,
+.listen {
   min-height: 100%;
-  margin-top: 50px;
   margin-left: 50px;
   width: 60%;
   color: antiquewhite;
@@ -168,6 +180,14 @@ table tr {
   /*border: 1px solid antiquewhite !important;*/
 }
 
+.tabellen {
+  min-height: 100%;
+  margin-left: 50px;
+  width: 60%;
+  color: antiquewhite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+}
 .btn {
   font-size: 1.5rem !important  ;
 }
