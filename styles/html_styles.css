@@ -151,7 +151,7 @@ table tr {
 .formatierung,
 .strukturierung {
   height: 450px;
-  margin-bottom: 75px;
+  margin-bottom: 100px;
   margin-left: 50px;
   width: 60%;
   color: antiquewhite;
@@ -173,6 +173,7 @@ table tr {
 .listen {
   min-height: 100%;
   margin-left: 50px;
+  margin-bottom: 10px;
   width: 60%;
   color: antiquewhite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -252,17 +253,6 @@ table tr {
   border: 1px solid antiquewhite !important;
   padding: 1rem;
 }
-
-/* .fader {
-  transition: opacity 0.1s ease-in-out !important;
-}
-
-.fadeOut {
-  opacity: 0 !important;
-}
-.fadeIn {
-  opacity: 1 !important;
-} */
 
 .scrollFade {
   opacity: 1;
